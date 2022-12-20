@@ -1,0 +1,31 @@
+dateModified: 1671528365
+email:
+  fromEmail: bjorvanh1@student.arteveldehs.be
+  fromName: Zawia
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    8de2ef2a-917d-4573-a731-2194990b8927: Common # Common
+    a17e350d-daa8-4b8c-9140-a4668e8b40ef: Zawia # Zawia
+    b2874c9f-b905-4009-8994-9088b3ed9c1e: Zawia # Zawia
+plugins:
+  dumper:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: pro
+  live: true
+  name: Zawia
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
