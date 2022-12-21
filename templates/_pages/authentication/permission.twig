@@ -1,0 +1,46 @@
+{% extends "_layout/base" %}
+
+{% block head %}
+	{{ parent() }}
+	<link rel="stylesheet" href="{{ alias('@web/css/login.css') }}">
+{% endblock %}
+
+{% block body %}
+	<div class="login flex">
+		<div class="image">
+			<img src="{{ alias('@web/assets/permission.png') }}" alt="Login">
+		</div>
+		<div class="form">
+			<h2>Vraag toegang aan</h2>
+			<p>Lorem</p>
+			<form method="post" accept-charset="UTF-8">
+				{{ csrfInput() }}
+				{{ actionInput('contact-form/send') }}
+
+
+				{{ input('E-mail', 'fromEmail', submission.fromEmail ?? '', {
+        		id: 'from-email',
+    			autocomplete: 'email',
+				class: 'input input--hero',
+				placeholder: 'Vul je email in',
+    		}) }}
+
+				{{ input('text', 'fromName', submission.fromName ?? 'Iemand', {
+				id: 'from-name',
+				autocomplete: 'name',
+				class: 'hidden',
+			}) }}
+
+
+				{{ tag('textarea', {
+				text: submission.message ?? 'Iemand heeft een aanvraag ingediend om toegang te krijgen tot ArabTeach',
+				id: 'message',
+				name: 'message',
+				class: 'hidden',
+			}) }}
+
+				<button type="submit" class="btn btn-primary">Verstuur</button>
+			</form>
+		</div>
+	</div>
+{% endblock %}

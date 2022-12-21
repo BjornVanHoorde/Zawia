@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: toegang
+name: Toegang
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  b2874c9f-b905-4009-8994-9088b3ed9c1e: # Zawia
+    enabledByDefault: true
+    hasUrls: true
+    template: _pages\authentication\permission
+    uriFormat: toegang
+type: single

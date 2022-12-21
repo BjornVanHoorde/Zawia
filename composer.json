@@ -1,6 +1,7 @@
 {
   "require": {
     "craftcms/cms": "^4.3.5",
+    "craftcms/contact-form": "3.0.0",
     "craftcms/redactor": "3.0.2",
     "studioespresso/craft-dumper": "3.0.1",
     "vlucas/phpdotenv": "^5.4.0"

@@ -1,5 +1,5 @@
 fieldLayouts:
-  e4d37785-b3ba-469f-877f-42273371dd72:
+  8ec28712-a52d-4f42-afab-508268b5556d:
     tabs:
       -
         elementCondition: null
@@ -26,17 +26,17 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 267f0bda-b47d-408c-9279-6820a9999083
+            uid: 77bb9e1e-6b51-459c-9a46-9cac604d9071
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: f4fb41ec-b97b-4f01-b9ad-b52a0927929b
+        uid: 77e06622-3287-4d3f-8635-630ed811864a
         userCondition: null
-handle: login
+handle: toegang
 hasTitleField: false
-name: Login
-section: 82064a65-72dc-4540-b424-e0692a2bbab1 # Login
+name: Toegang
+section: 99601d0e-e7cd-4c78-91b1-c36db3eadd99 # Toegang
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
