@@ -1,4 +1,4 @@
-dateModified: 1671632376
+dateModified: 1671633763
 email:
   fromEmail: bjorvanh1@student.arteveldehs.be
   fromName: Zawia
@@ -36,7 +36,9 @@ meta:
     9b9ff0ef-f17a-4eaf-af42-ae98429b4950: Home # Home
     299fffcc-2678-4d7b-a003-3c64178d734d: 'Thema''s' # Thema's
     412bccbe-4151-4977-a605-8d9988b84eaa: Uploads # Uploads
+    82064a65-72dc-4540-b424-e0692a2bbab1: Login
     a17e350d-daa8-4b8c-9140-a4668e8b40ef: Zawia # Zawia
+    a781d844-0309-4579-81f5-a06f89fe8e0c: Login
     b2874c9f-b905-4009-8994-9088b3ed9c1e: Zawia # Zawia
     f6dcd4c6-ca82-4b5e-9934-70daee95ae93: Home # Home
 plugins:

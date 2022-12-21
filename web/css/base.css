@@ -59,6 +59,12 @@ h3 {
   justify-content: center;
 }
 
+a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
 .div-link {
   position: absolute;
   width: 100%;

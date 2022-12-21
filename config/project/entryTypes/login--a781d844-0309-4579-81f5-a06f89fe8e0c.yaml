@@ -1,0 +1,43 @@
+fieldLayouts:
+  e4d37785-b3ba-469f-877f-42273371dd72:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 267f0bda-b47d-408c-9279-6820a9999083
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f4fb41ec-b97b-4f01-b9ad-b52a0927929b
+        userCondition: null
+handle: login
+hasTitleField: false
+name: Login
+section: 82064a65-72dc-4540-b424-e0692a2bbab1
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

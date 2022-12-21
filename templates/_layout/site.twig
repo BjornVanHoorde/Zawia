@@ -30,9 +30,13 @@
 		<div class="icon">
 			{% if currentUser %}
 				{# <i class="fa-solid fa-graduation-cap"></i> #}
-				<a class="btn btn-primary" href="#">Uitloggen</a>
+				<form method="post" accept-charset="UTF-8">
+					{{ csrfInput() }}
+					{{ actionInput('users/logout') }}
+					<button class="btn btn-primary">Uitloggen</button>
+				</form>
 			{% else %}
-				<a class="btn btn-primary" href="#">Inloggen</a>
+				<a class="btn btn-primary" href="{{ craft.entries.section('login').one().getUrl() }}">Inloggen</a>
 			{% endif %}
 		</div>
 	</header>
