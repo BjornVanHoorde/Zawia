@@ -3,6 +3,7 @@
 {% block head %}
 	{{ parent() }}
 	<link rel="stylesheet" href="{{ alias('@web/css/header.css') }}">
+	<link rel="stylesheet" href="{{ alias('@web/css/footer.css') }}">
 {% endblock %}
 
 {% block body %}
@@ -27,7 +28,12 @@
 			</ul>
 		</nav>
 		<div class="icon">
-			<i class="fa-solid fa-graduation-cap"></i>
+			{% if currentUser %}
+				{# <i class="fa-solid fa-graduation-cap"></i> #}
+				<a class="btn btn-primary" href="#">Uitloggen</a>
+			{% else %}
+				<a class="btn btn-primary" href="#">Inloggen</a>
+			{% endif %}
 		</div>
 	</header>
 
@@ -35,7 +41,14 @@
 		{% block content %}{% endblock %}
 	</main>
 
-	<footer>
-		{% block footer %}{% endblock %}
+	<footer class="flex">
+		{% block footer %}
+			<div class="footer_left">
+				<p>© 2023</p>
+			</div>
+			<div class="footer_right">
+				<p>Created by: Bjorn Van Hoorde</p>
+			</div>
+		{% endblock %}
 	</footer>
 {% endblock %}

@@ -21,6 +21,10 @@ h2 {
   font-size: var(--h2-font-size);
 }
 
+h3 {
+  font-size: var(--h3-font-size);
+}
+
 .container {
   margin: 0 auto;
   padding: 0 100px;
@@ -53,4 +57,13 @@ h2 {
 .center-block {
   display: flex;
   justify-content: center;
+}
+
+.div-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
