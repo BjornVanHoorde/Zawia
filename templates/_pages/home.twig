@@ -1,0 +1,132 @@
+{% extends "_layout/site" %}
+
+{% block head %}
+	{{ parent() }}
+	<link rel="stylesheet" href="{{ alias('@web/css/home.css') }}"/>
+{% endblock %}
+
+{% block content %}
+
+	<div class="banner">
+		<img src="{{ alias('@web/assets/banner.png') }}" alt="banner" class="img-responsive center-block"/>
+		<div class="banner-text">
+			<h1 class="text-center">Every person has a story</h1>
+			<p class="text-center">Ontdek de pracht van de Islam en ontgrendel de wijsheid van de Koran met ons uitgebreide islamitische onderwijsplatform</p>
+		</div>
+	</div>
+
+	<div class="latest-articles">
+		<div class="container">
+			<h2 class="text-center">Laatste artikelen</h2>
+			<div
+				class="flex">
+				{# {% for article in articles %} #}
+				<div class="article">
+					<div class="article-image">
+						<img src="{{ alias('@web/assets/article.jpg') }}" alt="article" class="img-responsive center-block"/>
+						<div class="article-author text-right">
+							<small>Author</small>
+						</div>
+					</div>
+					<div class="article-content">
+						<h3>Artikel titel</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<a href="#">
+						<span class="link"></span>
+					</a>
+				</div>
+				<div class="article">
+					<div class="article-image">
+						<img src="{{ alias('@web/assets/article.jpg') }}" alt="article" class="img-responsive center-block"/>
+						<div class="article-author text-right">
+							<small>Author</small>
+						</div>
+					</div>
+					<div class="article-content">
+						<h3>Artikel titel</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<a href="#">
+						<span class="link"></span>
+					</a>
+				</div>
+				<div class="article">
+					<div class="article-image">
+						<img src="{{ alias('@web/assets/article.jpg') }}" alt="article" class="img-responsive center-block"/>
+						<div class="article-author text-right">
+							<small>Author</small>
+						</div>
+					</div>
+					<div class="article-content">
+						<h3>Artikel titel</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+					</div>
+					<a href="#">
+						<span class="link"></span>
+					</a>
+				</div>
+				{# {% endfor %} #}
+			</div>
+		</div>
+    <div class="button-container center-block">
+      <a href="#" class="btn btn-primary">Bekijk alle artikelen</a>
+    </div>
+	</div>
+
+  <div class="themes">
+    <div class="container">
+      <h2 class="text-center">Thema's</h2>
+      <div class="flex">
+        <div class="theme">
+          <div class="theme-image">
+            <img src="{{ alias('@web/assets/theme.jpg') }}" alt="theme" class="img-responsive center-block"/>
+          </div>
+          <div class="theme-content">
+            <h3>Thema titel</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <a href="#">
+            <span class="link"></span>
+          </a>
+        </div>
+        <div class="theme">
+          <div class="theme-image">
+            <img src="{{ alias('@web/assets/theme.jpg') }}" alt="theme" class="img-responsive center-block"/>
+          </div>
+          <div class="theme-content">
+            <h3>Thema titel</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <a href="#">
+            <span class="link"></span>
+          </a>
+        </div>
+        <div class="theme">
+          <div class="theme-image">
+            <img src="{{ alias('@web/assets/theme.jpg') }}" alt="theme" class="img-responsive center-block"/>
+          </div>
+          <div class="theme-content">
+            <h3>Thema titel</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <a href="#">
+            <span class="link"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

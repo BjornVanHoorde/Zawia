@@ -1,0 +1,14 @@
+:root {
+  --white: #fff;
+  --grey: #707070;
+  --black: #252525;
+  --wheat: #faf8f1;
+  --primary: #c58940;
+  --secondary: #e5ba73;
+  --tertiary: #faeab1;
+
+  --font-family: 'Roboto', sans-serif;
+  --font-size: 16px;
+  --h1-font-size: 3.5rem;
+  --h2-font-size: 3rem;
+}

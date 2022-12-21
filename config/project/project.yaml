@@ -1,13 +1,35 @@
-dateModified: 1671528365
+dateModified: 1671530384
 email:
   fromEmail: bjorvanh1@student.arteveldehs.be
   fromName: Zawia
-  transportType: craft\mail\transportadapters\Sendmail
+  replyToEmail: bjorvanh1@student.arteveldehs.be
+  template: ''
+  transportSettings:
+    encryptionMethod: none
+    host: localhost
+    password: ''
+    port: '1025'
+    timeout: '10'
+    useAuthentication: '0'
+    username: ''
+  transportType: craft\mail\transportadapters\Smtp
+fs:
+  assets:
+    hasUrls: false
+    name: Assets
+    settings:
+      path: '@webroot'
+    type: craft\fs\Local
+    url: null
 meta:
   __names__:
+    5e5a77ad-3631-4235-b4a1-75dcf93f3eae: Image
     8de2ef2a-917d-4573-a731-2194990b8927: Common # Common
+    9b9ff0ef-f17a-4eaf-af42-ae98429b4950: Home # Home
+    30c5fe81-19ef-4c90-a528-9d5ca6765ff9: Uploads # Uploads
     a17e350d-daa8-4b8c-9140-a4668e8b40ef: Zawia # Zawia
     b2874c9f-b905-4009-8994-9088b3ed9c1e: Zawia # Zawia
+    f6dcd4c6-ca82-4b5e-9934-70daee95ae93: Home # Home
 plugins:
   dumper:
     edition: standard
