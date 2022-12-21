@@ -1,0 +1,58 @@
+defaultPlacement: end
+fieldLayouts:
+  ba852ef8-664f-43df-8d82-186ba69a621f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 21e146ce-3621-4e8f-a1c0-aa9eb4828b42
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5e5a77ad-3631-4235-b4a1-75dcf93f3eae # Icon
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1634d4be-7db1-47e8-9a09-b57a3bca710a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d3943509-cc87-4b5a-96f8-38419dc3d21c
+        userCondition: null
+handle: themas
+name: 'Thema''s'
+siteSettings:
+  b2874c9f-b905-4009-8994-9088b3ed9c1e: # Zawia
+    hasUrls: true
+    template: null
+    uriFormat: 'themas/{slug}'
+structure:
+  maxLevels: null
+  uid: 796dc891-688e-4ec7-b95f-1ab21fda5961

@@ -1,5 +1,5 @@
 fieldLayouts:
-  aa7e2f90-d109-4f65-b52b-978992ed84ef:
+  11fa7e45-775e-42f1-ae51-51eac9aee194:
     tabs:
       -
         elementCondition: null
@@ -26,18 +26,18 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\assets\AssetTitleField
-            uid: 7bdd66fd-5747-4524-a7f1-7b04ea7604a7
+            uid: 2c82a545-210a-4c0e-98a4-e2673c5cba91
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 042348f1-7ce1-43e6-bc9b-528a55866a33
+        uid: 619943b6-163e-4747-82bb-fe862a38d80b
         userCondition: null
-fs: assets
+fs: uploads
 handle: uploads
 name: Uploads
-sortOrder: 1
+sortOrder: 2
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
-transformFs: ''
+transformFs: uploads
 transformSubpath: ''

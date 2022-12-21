@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: 8de2ef2a-917d-4573-a731-2194990b8927 # Common
-handle: image
+handle: icon
 instructions: null
-name: Image
+name: Icon
 searchable: false
 settings:
   allowSelfRelations: false
@@ -11,16 +11,16 @@ settings:
   allowUploads: true
   allowedKinds:
     - image
-  defaultUploadLocationSource: 'volume:30c5fe81-19ef-4c90-a528-9d5ca6765ff9' # Uploads
-  defaultUploadLocationSubpath: null
+  defaultUploadLocationSource: 'volume:412bccbe-4151-4977-a605-8d9988b84eaa' # Uploads
+  defaultUploadLocationSubpath: icons
   localizeRelations: false
-  maxRelations: null
-  minRelations: null
+  maxRelations: 1
+  minRelations: 1
   previewMode: full
   restrictFiles: true
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: 'volume:30c5fe81-19ef-4c90-a528-9d5ca6765ff9' # Uploads
+  restrictedLocationSource: 'volume:412bccbe-4151-4977-a605-8d9988b84eaa' # Uploads
   restrictedLocationSubpath: null
   selectionCondition:
     __assoc__:
@@ -34,12 +34,12 @@ settings:
         - class
         - craft\elements\conditions\assets\AssetCondition
   selectionLabel: null
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   source: null
   sources:
-    - 'volume:30c5fe81-19ef-4c90-a528-9d5ca6765ff9' # Uploads
+    - 'volume:412bccbe-4151-4977-a605-8d9988b84eaa' # Uploads
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

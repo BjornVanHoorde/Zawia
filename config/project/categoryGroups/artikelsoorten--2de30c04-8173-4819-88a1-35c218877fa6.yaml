@@ -1,0 +1,46 @@
+defaultPlacement: end
+fieldLayouts:
+  d242da15-1b53-4b0e-b5bb-53a65bf734b0:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: c0d7b4bc-57b0-4e29-b902-2b213edac90e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e78c9b30-67a4-40d4-8748-a76054bd2d33
+        userCondition: null
+handle: artikelsoorten
+name: Artikelsoorten
+siteSettings:
+  b2874c9f-b905-4009-8994-9088b3ed9c1e: # Zawia
+    hasUrls: true
+    template: null
+    uriFormat: 'artikelsoorten/{slug}'
+structure:
+  maxLevels: null
+  uid: f8d7b5f2-069c-481f-be6f-1ef5e7e41612

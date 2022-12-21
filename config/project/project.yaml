@@ -1,4 +1,4 @@
-dateModified: 1671530384
+dateModified: 1671632376
 email:
   fromEmail: bjorvanh1@student.arteveldehs.be
   fromName: Zawia
@@ -16,17 +16,26 @@ email:
 fs:
   assets:
     hasUrls: false
-    name: Assets
+    name: assets
     settings:
-      path: '@webroot'
+      path: '@webroot/assets'
     type: craft\fs\Local
     url: null
+  uploads:
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: '@webroot/assets'
+    type: craft\fs\Local
+    url: '@web/assets'
 meta:
   __names__:
-    5e5a77ad-3631-4235-b4a1-75dcf93f3eae: Image
+    2de30c04-8173-4819-88a1-35c218877fa6: Artikelsoorten # Artikelsoorten
+    5e5a77ad-3631-4235-b4a1-75dcf93f3eae: Icon # Icon
     8de2ef2a-917d-4573-a731-2194990b8927: Common # Common
     9b9ff0ef-f17a-4eaf-af42-ae98429b4950: Home # Home
-    30c5fe81-19ef-4c90-a528-9d5ca6765ff9: Uploads # Uploads
+    299fffcc-2678-4d7b-a003-3c64178d734d: 'Thema''s' # Thema's
+    412bccbe-4151-4977-a605-8d9988b84eaa: Uploads # Uploads
     a17e350d-daa8-4b8c-9140-a4668e8b40ef: Zawia # Zawia
     b2874c9f-b905-4009-8994-9088b3ed9c1e: Zawia # Zawia
     f6dcd4c6-ca82-4b5e-9934-70daee95ae93: Home # Home
