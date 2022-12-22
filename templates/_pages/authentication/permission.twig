@@ -18,18 +18,11 @@
 				{{ actionInput('contact-form/send') }}
 
 
-				{{ input('E-mail', 'fromEmail', submission.fromEmail ?? '', {
+				{{ input('email', 'fromEmail', submission.fromEmail ?? '', {
         		id: 'from-email',
     			autocomplete: 'email',
-				class: 'input input--hero',
 				placeholder: 'Vul je email in',
     		}) }}
-
-				{{ input('text', 'fromName', submission.fromName ?? 'Iemand', {
-				id: 'from-name',
-				autocomplete: 'name',
-				class: 'hidden',
-			}) }}
 
 
 				{{ tag('textarea', {
