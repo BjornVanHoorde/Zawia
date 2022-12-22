@@ -24,6 +24,12 @@
 				placeholder: 'Vul je email in',
     		}) }}
 
+				{{ input('text', 'fromName', submission.fromName ?? 'Iemand', {
+				id: 'from-name',
+				autocomplete: 'name',
+				class: 'hidden',
+			}) }}
+
 
 				{{ tag('textarea', {
 				text: submission.message ?? 'Iemand heeft een aanvraag ingediend om toegang te krijgen tot ArabTeach',
@@ -34,6 +40,11 @@
 
 				<button type="submit" class="btn btn-primary">Verstuur</button>
 			</form>
+			{% if craft.app.session.hasFlash('notice') %}
+				<p class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
+			{% elseif craft.app.session.hasFlash('error') %}
+				<p class="message error">{{ craft.app.session.getFlash('error') }}</p>
+			{% endif %}
 		</div>
 	</div>
 {% endblock %}
