@@ -1,7 +1,9 @@
 .banner img {
+  position: relative;
   width: 100%;
   object-fit: cover;
   filter: blur(1.5px);
+  z-index: -1;
 }
 
 .banner .banner-text {
@@ -13,6 +15,7 @@
 
 .banner .banner-text h1 {
   margin-bottom: 1rem;
+  z-index: 10000;
 }
 
 .latest-articles {

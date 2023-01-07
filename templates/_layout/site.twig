@@ -4,6 +4,7 @@
 	{{ parent() }}
 	<link rel="stylesheet" href="{{ alias('@web/css/header.css') }}">
 	<link rel="stylesheet" href="{{ alias('@web/css/footer.css') }}">
+	<link rel="stylesheet" href="{{ alias('@web/css/header-dropdown.css') }}">
 {% endblock %}
 
 {% block body %}
@@ -13,18 +14,10 @@
 		</div>
 		<nav>
 			<ul>
-				<li>
-					<ahref="{{alias('@web/')}}">Home</ahref=>
-				</li>
-				<li>
-					<ahref="{{alias('@web/themas')}}">Thema's</ahref=>
-				</li>
-				<li>
-					<ahref="{{alias('@web/mijnArtikels')}}">Mijn Artikels</ahref=>
-				</li>
-				<li>
-					<ahref="{{alias('@web/nieuwArtikel')}}">Nieuw Artikel</ahref=>
-				</li>
+				<li><ahref="{{alias('@web/')}}">Home</a></li>
+				<li><a class="themes dropdown__btn">Thema's</a></li>
+				<li><ahref="{{alias('@web/mijnArtikels')}}">Mijn Artikels</a></li>
+				<li><ahref="{{alias('@web/nieuwArtikel')}}">Nieuw Artikel</a></li>
 			</ul>
 		</nav>
 		<div class="icon">
@@ -40,6 +33,23 @@
 			{% endif %}
 		</div>
 	</header>
+	<div class="header-dropdown hidden">
+		<div class="container">
+			{% set themeCategories = craft.categories().group('themas').all() %}
+			{% for theme in themeCategories %}
+				{% set icon = theme.icon.one() %}
+				{% set cropSetting = {
+            mode: 'crop',
+            width: 40,
+            quality: 80
+          } %}
+				<div class="text">
+					<img src="{{ icon.getUrl(cropSetting) }}" alt="{{ icon.alt }}" class="img-responsive center-block"/>
+					<p>{{theme.title}}</p>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
 
 	<main>
 		{% block content %}{% endblock %}

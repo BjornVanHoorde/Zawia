@@ -8,31 +8,35 @@
 {% block body %}
 	<div class="login flex">
 		<div class="image">
-			<img src="{{ alias('@web/assets/permission.png') }}" alt="Login">
+			<img src="{{ alias('@web/assets/permission.png') }}" alt="Permission">
 		</div>
 		<div class="form">
 			<h2>Vraag toegang aan</h2>
-			<p>Lorem</p>
+      <p>Al een gebruiker?  <a href="{{ craft.entries.section('login').one().getUrl() }}">Log hier in</a></p>
 			<form method="post" accept-charset="UTF-8">
 				{{ csrfInput() }}
 				{{ actionInput('contact-form/send') }}
 
+				<div class="field">
+					<label for="fromEmail">Email</label>
+					{{ input('email', 'fromEmail', submission.fromEmail ?? '', {
+							id: 'from-email',
+						autocomplete: 'email',
+					placeholder: 'Example@email.com',
+					}) }}
+				</div>
 
-				{{ input('email', 'fromEmail', submission.fromEmail ?? '', {
-        		id: 'from-email',
-    			autocomplete: 'email',
-				placeholder: 'Vul je email in',
-    		}) }}
-
-				{{ input('text', 'fromName', submission.fromName ?? 'Iemand', {
-				id: 'from-name',
-				autocomplete: 'name',
-				class: 'hidden',
-			}) }}
-
+				<div class="field">
+					<label for="fromName">Naam</label>
+					{{ input('text', 'fromName', submission.fromName ?? '', {
+						id: 'from-name',
+						autocomplete: 'name',
+						placeholder: 'Naam',
+					}) }}
+				</div>
 
 				{{ tag('textarea', {
-				text: submission.message ?? 'Iemand heeft een aanvraag ingediend om toegang te krijgen tot ArabTeach',
+				text: submission.message ?? 'Deze persoon vraagt toegang aan voor Zawia.',
 				id: 'message',
 				name: 'message',
 				class: 'hidden',

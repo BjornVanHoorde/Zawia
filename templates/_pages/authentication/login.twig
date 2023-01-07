@@ -9,7 +9,7 @@
 	<div class="login flex">
 		<div class="form">
       <h1>Log in</h1>
-      <p>Nieuwe gebruiker?  <a href="{{ url('register') }}">Vraag toegang aan</a></p>
+      <p>Nieuwe gebruiker?  <a href="{{ craft.entries.section('toegang').one().getUrl() }}">Vraag toegang aan</a></p>
 			<form method="post" accept-charset="UTF-8">
 				{{ csrfInput() }}
 				{{ actionInput('users/login') }}
