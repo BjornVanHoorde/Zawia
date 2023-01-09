@@ -7,6 +7,8 @@
   --secondary: #e5ba73;
   --tertiary: #faeab1;
 
+  --transparant: rgba(250, 234, 177, 0.4);
+
   --font-family: 'Roboto', sans-serif;
   --font-size: 16px;
   --h1-font-size: 3.5rem;

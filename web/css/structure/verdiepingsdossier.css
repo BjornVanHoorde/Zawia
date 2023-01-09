@@ -1,0 +1,22 @@
+.aside {
+  width: 20%;
+  background-color: var(--tertiary);
+  padding: 2rem 3.75rem;
+}
+
+.aside a {
+  color: var(--black);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.aside h4 {
+  color: var(--black);
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 1.5rem;
+}
+
+.text {
+  width: 80%;
+}
