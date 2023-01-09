@@ -94,7 +94,7 @@ a.button {
   text-decoration: none;
 }
 
-input:not([type="checkbox"]) {
+input:not([type="checkbox"]){
   width: 100%;
   height: 3rem;
   border: none;

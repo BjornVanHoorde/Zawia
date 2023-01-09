@@ -17,7 +17,7 @@
 			<ul>
 				{% for menuItem in menuItems %}
 					{% set destination = menuItem.destination.one() %}
-					{% set activeLink = (craft.app.request.segments|first) == destination.uri or ((craft.app.request.segments|first) == false and destination.uri == '__home__') %}
+					{% set activeLink = (craft.app.request.segments|first) == destination.uri or ((craft.app.request.segments|first) == false and destination.uri == '__home__') or ((craft.app.request.segments|first) == "nieuw-verdiepingsdossiers" and destination.uri == 'nieuw-artikel') %}
 					<li>
 						<a href="{{ destination.url }}" class="{{ activeLink ? 'active' }}">{{ menuItem.label }}</a>
 					</li>

@@ -1,4 +1,4 @@
-dateModified: 1673270054
+dateModified: 1673277128
 email:
   fromEmail: bjorvanh1@student.arteveldehs.be
   fromName: Zawia
@@ -61,6 +61,7 @@ meta:
     c5b2d6ec-5e5e-4fdf-8db7-b6c941319a67: Destination # Destination
     d0a7b5b2-2d89-4806-bd1d-6312e43b8f31: 'Soort Id' # Soort Id
     ec896c9b-91b7-46f8-a839-d56f4da0ae7f: Default # Default
+    ed35e35b-52d9-4544-8c98-a128bf571709: Image # Image
     f2ce5aef-2433-48de-b247-ad9d2c1ccf34: Header # Header
     f6dcd4c6-ca82-4b5e-9934-70daee95ae93: Home # Home
     f626ace0-6e6e-4d03-9165-0d71e53485c5: 'Nieuw verdiepingsdossier' # Nieuw verdiepingsdossier

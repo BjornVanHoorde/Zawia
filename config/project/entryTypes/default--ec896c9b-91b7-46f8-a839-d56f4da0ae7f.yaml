@@ -32,6 +32,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: ed35e35b-52d9-4544-8c98-a128bf571709 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d49e3ad-2365-42e8-bae4-5565d5d33306
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 6edd9cc7-7f02-42eb-937e-8e242d90d712 # Excerpt
             instructions: null
             label: null
@@ -72,18 +84,6 @@ fieldLayouts:
       -
         elementCondition: null
         elements:
-          -
-            elementCondition: null
-            fieldUid: 391bf39d-15d7-4339-894c-d2e5678179fd # Category Soort
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 178883f8-a231-4487-afa3-5b6f1aff79c9
-            userCondition: null
-            warning: null
-            width: 100
           -
             elementCondition: null
             fieldUid: 11488e99-48cf-4b89-ae9e-74a299337c18 # Category Thema

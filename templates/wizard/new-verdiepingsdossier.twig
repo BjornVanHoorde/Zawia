@@ -9,7 +9,7 @@
 
 	{% include "_includes/title" %}
 <div class="container">
-	<form class="new-form" method="post" accept-charset="UTF-8">
+	<form class="new-form" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
 			{{ csrfInput() }}
 			{{ actionInput('entries/save-entry') }}
 			{{ redirectInput('verdiepingsdossiers/{slug}') }}
@@ -38,7 +38,13 @@
 			</div>
 
 			<div class="form-image">
-			image here
+				<div class="field">
+					<label for="image">Artikel afbeelding<br><span>(Dit is zichtbaar bij de lijstweergave van artikels)</span></label>
+					{{ input('file', 'fields[image]', "" ,{
+						id: 'image',
+					}) }}
+					{{ _self.errorList(entry.getErrors('image')) }}
+				</div>
 			</div>
 		</div>
 
