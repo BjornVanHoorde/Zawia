@@ -1,0 +1,43 @@
+fieldLayouts:
+  4661c040-dc23-4f26-956c-b70c5766d5be:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: eae36270-6d91-4403-90a1-2d5f52c9bfc8
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cd426444-a641-4ed8-a38f-cee10ebb5c1c
+        userCondition: null
+handle: nieuwArtikel
+hasTitleField: false
+name: 'Nieuw Artikel'
+section: 22d6c214-b6d3-4e35-a9ce-3bc5464a425a # Nieuw Artikel
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

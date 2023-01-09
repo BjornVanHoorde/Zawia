@@ -2,10 +2,17 @@
 
 {% block head %}
 	{{ parent() }}
-	<link rel="stylesheet" href="{{ alias('@web/css/new.css') }}"/>
+	<link rel="stylesheet" href="{{ alias('@web/css/pages/new.css') }}"/>
 {% endblock %}
 
 {% block content %}
 
-	
+	{% include "_includes/title" %}
+
+	<div class="buttons">
+	{% set artikelSoorten = craft.categories().group('artikelSoorten').all() %}
+	{% for artikelSoort in artikelSoorten %}
+		<a href="nieuw-{{ artikelSoort.slug }}" class="button">{{ artikelSoort.title }}</a>
+	{% endfor %}
+
 {% endblock %}

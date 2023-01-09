@@ -32,6 +32,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 6edd9cc7-7f02-42eb-937e-8e242d90d712 # Excerpt
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d96bfc1e-759c-4c13-931f-324610f07e7b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 1544c70f-6ecc-45b1-999e-41aa2e4a5825 # Body
             instructions: null
             label: null
@@ -56,6 +68,36 @@ fieldLayouts:
             width: 100
         name: Content
         uid: aef7296d-e714-492f-9edf-a0e9817ecba6
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 391bf39d-15d7-4339-894c-d2e5678179fd # Category Soort
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 178883f8-a231-4487-afa3-5b6f1aff79c9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 11488e99-48cf-4b89-ae9e-74a299337c18 # Category Thema
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dd239b9d-4abc-49c4-8e0d-8dcf34b32fb9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Categories
+        uid: e45ccfba-7332-4964-a268-c6de188dab2f
         userCondition: null
 handle: default
 hasTitleField: true

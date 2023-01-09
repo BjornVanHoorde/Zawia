@@ -1,0 +1,19 @@
+columnSuffix: lnhnqhwg
+contentColumnType: string(1020)
+fieldGroup: 6c4f9f9f-a163-4996-96f5-f3f93649b5f6 # Verdiepingsdossiers
+handle: excerpt
+instructions: null
+name: Excerpt
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 255
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

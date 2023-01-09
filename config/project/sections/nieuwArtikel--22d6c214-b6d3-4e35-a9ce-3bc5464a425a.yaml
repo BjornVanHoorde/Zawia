@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
 handle: nieuwArtikel
-name: 'Nieuw artikel'
+name: 'Nieuw Artikel'
 previewTargets:
   -
     __assoc__:

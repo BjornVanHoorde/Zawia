@@ -1,0 +1,20 @@
+columnSuffix: dmprbltu
+contentColumnType: integer(10)
+fieldGroup: 8de2ef2a-917d-4573-a731-2194990b8927 # Common
+handle: soortId
+instructions: null
+name: 'Soort Id'
+searchable: false
+settings:
+  decimals: 0
+  defaultValue: null
+  max: null
+  min: 0
+  prefix: null
+  previewCurrency: null
+  previewFormat: decimal
+  size: null
+  suffix: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Number

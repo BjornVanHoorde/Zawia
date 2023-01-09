@@ -33,10 +33,10 @@ fieldLayouts:
         name: Content
         uid: 88482248-55c6-4e06-be78-de2d46b1114e
         userCondition: null
-handle: nieuwArtikel
+handle: nieuwVerdiepingsdossier
 hasTitleField: false
-name: 'Nieuw artikel'
-section: 79c6387a-1ff2-4303-b7d5-5911c124ed85 # Nieuw artikel
+name: 'Nieuw verdiepingsdossier'
+section: 79c6387a-1ff2-4303-b7d5-5911c124ed85 # Nieuw verdiepingsdossier
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
