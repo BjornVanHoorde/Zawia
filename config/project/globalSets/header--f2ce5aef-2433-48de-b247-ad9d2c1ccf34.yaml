@@ -1,0 +1,24 @@
+fieldLayouts:
+  4880c513-e267-4538-a9d8-48cf7c161449:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 8a8ed8be-4d9f-46b0-97b7-9787f89f7c99 # Menu
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3e14e41a-a231-4515-b25e-5d45f06047f3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Menu
+        uid: 69e9516f-7894-4295-9aa0-212b668956a3
+        userCondition: null
+handle: header
+name: Header
+sortOrder: 1

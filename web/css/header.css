@@ -37,6 +37,14 @@ header nav ul li {
   list-style-type: none;
 }
 
+header nav ul li a{
+  color: var(--grey);
+}
+
+header nav ul li a.active {
+  color: var(--primary);
+}
+
 header nav ul li .themes{
   cursor: pointer;
 }

@@ -1,7 +1,7 @@
 .header-dropdown {
     width: 100vw;
     position: absolute;
-    top: 100px;
+    top: 95px;
     background: var(--wheat);
     z-index: 100;
     padding: 1rem 0;

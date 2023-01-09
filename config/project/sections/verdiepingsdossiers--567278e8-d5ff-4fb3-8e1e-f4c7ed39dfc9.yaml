@@ -1,0 +1,27 @@
+defaultPlacement: end
+enableVersioning: true
+handle: verdiepingsdossiers
+name: Verdiepingsdossiers
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  b2874c9f-b905-4009-8994-9088b3ed9c1e: # Zawia
+    enabledByDefault: true
+    hasUrls: true
+    template: verdiepingsdossiers/_entry
+    uriFormat: 'verdiepingsdossiers/{parent.slug}/{slug}'
+structure:
+  maxLevels: null
+  uid: 2f2797a8-0914-45e0-96ef-f98f379a29f3
+type: structure

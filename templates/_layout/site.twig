@@ -13,11 +13,18 @@
 			<img src="{{ alias('@web/assets/logo.png') }}" alt="logo">
 		</div>
 		<nav>
+			{% set menuItems = header.menu.all() %}
 			<ul>
-				<li><ahref="{{alias('@web/')}}">Home</a></li>
-				<li><a class="themes dropdown__btn">Thema's</a></li>
-				<li><ahref="{{alias('@web/mijnArtikels')}}">Mijn Artikels</a></li>
-				<li><ahref="{{alias('@web/nieuwArtikel')}}">Nieuw Artikel</a></li>
+				{% for menuItem in menuItems %}
+					{% set destination = menuItem.destination.one() %}
+					{% set activeLink = (craft.app.request.segments|first) == destination.uri or ((craft.app.request.segments|first) == false and destination.uri == '__home__') %}
+					<li>
+						<a href="{{ destination.url }}" class="{{ activeLink ? 'active' }}">{{ menuItem.label }}</a>
+					</li>
+				{% endfor %}
+				<li>
+					<a class="themes dropdown__btn">Thema's</a>
+				</li>
 			</ul>
 		</nav>
 		<div class="icon">

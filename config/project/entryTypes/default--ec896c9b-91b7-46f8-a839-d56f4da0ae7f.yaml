@@ -1,0 +1,67 @@
+fieldLayouts:
+  cad58c5a-01d2-4646-8203-51597c5f702b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 75834e53-da1b-407b-b4f5-74eb574e9f8f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1544c70f-6ecc-45b1-999e-41aa2e4a5825 # Body
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6be47888-904a-4b16-88ea-dea7eca39c72
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 82c18cfa-2186-41cc-b3a7-d8d4f28bcd33 # Images
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1f68af2c-b35d-464a-bd51-771e678728f4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: aef7296d-e714-492f-9edf-a0e9817ecba6
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: 567278e8-d5ff-4fb3-8e1e-f4c7ed39dfc9 # Verdiepingsdossiers
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
