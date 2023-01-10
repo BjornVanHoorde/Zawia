@@ -2,7 +2,7 @@
 
 {% block head %}
 	{{ parent() }}
-	<link rel="stylesheet" href="{{ alias('@web/css/pages/themas.css') }}"/>
+	<link rel="stylesheet" href="{{ alias('@web/css/pages/themes.css') }}"/>
 {% endblock %}
 
 {% block scripts %}
@@ -17,9 +17,11 @@
   {% set themaId = entry.categoryThemaSingle.one().id %}
   {% set verdiepingsdossiers = craft.entries().section("verdiepingsdossiers").level(1).relatedTo(themaId).all() %}
   {% set themadossiers = craft.entries().section("themadossiers").level(1).relatedTo(themaId).all() %}
+  {% set escaperooms = craft.entries().section("escaperooms").level(1).relatedTo(themaId).all() %}
+  {% set onderzoeksvragen = craft.entries().section("onderzoeksvragen").level(1).relatedTo(themaId).all() %}
 
   <div class="container">
-    <div class="buttons">
+    <div class="buttons flex">
       <div class="btn verdiepingsdossiers active" id="verdiepingsdossiers-btn">
         Verdiepingsdossiers
       </div>
@@ -34,17 +36,41 @@
       </div>
     </div>
     <div class="artikels">
-      <div class="verdiepingsdossiers" id="verdiepingsdossiers"> 
-        Verdiepingsdossiers
+      <div class="verdiepingsdossiers flex" id="verdiepingsdossiers"> 
+        
+        {% if verdiepingsdossiers|length > 0 %}
+          {% include "_includes/articles" with verdiepingsdossiers %}
+        {% else %}
+          <h4>Er zijn nog geen verdiepingsdossiers voor dit thema.</h4>
+        {% endif %}
+        
       </div>
       <div class="themadossiers hidden" id="themadossiers">
-        Themadossiers
+
+        {% if themadossiers|length > 0 %}
+          {% include "_includes/articles" with themadossiers %}
+        {% else %}
+          <h4>Er zijn nog geen themadossiers voor dit thema.</h4>
+        {% endif %}
+
       </div>
       <div class="escaperooms hidden" id="escaperooms">
-        Escaperooms
+        
+        {% if escaperooms|length > 0 %}
+          {% include "_includes/articles" with escaperooms %}
+        {% else %}
+          <h4>Er zijn nog geen escaperooms voor dit thema.</h4>
+        {% endif %}
+
       </div>
       <div class="onderzoeksvragen hidden" id="onderzoeksvragen">
-        Onderzoeksvragen
+        
+        {% if onderzoeksvragen|length > 0 %}
+          {% include "_includes/articles" with onderzoeksvragen %}
+        {% else %}
+          <h4>Er zijn nog geen onderzoeksvragen voor dit thema.</h4>
+        {% endif %}
+
       </div>
     </div>
   </div>

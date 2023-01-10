@@ -3,6 +3,7 @@
     "craftcms/cms": "^4.3.5",
     "craftcms/contact-form": "3.0.0",
     "craftcms/redactor": "3.0.2",
+    "froala/craft-froala-editor": "^2.9",
     "studioespresso/craft-dumper": "3.0.1",
     "vlucas/phpdotenv": "^5.4.0"
   },
@@ -18,7 +19,8 @@
   "config": {
     "allow-plugins": {
       "craftcms/plugin-installer": true,
-      "yiisoft/yii2-composer": true
+      "yiisoft/yii2-composer": true,
+      "composer/installers": true
     },
     "sort-packages": true,
     "optimize-autoloader": true,

@@ -49,14 +49,17 @@
         <form method="post" accept-charset="UTF-8">
           {{ csrfInput() }}
           {{ actionInput('entries/save-entry') }}
+          {{ redirectInput('verdiepingsdossiers/{slug}') }}
           {{ hiddenInput('sectionId', '5') }}
           {{ hiddenInput('enabled', '1') }}
 
           <div class="field">
+            <label for="body">Inhoud</label>
             {{ tag('textarea', {
               id: 'body',
-              name: 'fields[body][]',
-              text: currentEntry.body|striptags,
+              name: 'fields[body]',
+              text: currentEntry.body,
+              class: 'editor',
             }) }}
           </div>
 

@@ -1,0 +1,17 @@
+{% for article in verdiepingsdossiers %}
+	<div class="article">
+		<div class="article-image">
+			<img src="{{ article.image.one().getUrl() }}" alt="article" class="img-responsive center-block"/>
+			<div class="article-author text-right">
+				<small>{{ article.author }}</small>
+			</div>
+		</div>
+		<div class="article-content">
+			<h4>{{ article.title }}</h4>
+			<p>{{ article.excerpt }}</p>
+		</div>
+		<a href="{{ article.getUrl() }}">
+			<span class="div-link"></span>
+		</a>
+	</div>
+{% endfor %}
