@@ -36,7 +36,28 @@
 
     </div>
     <div class="text">
-      text
+      <div id="static-text">
+      {{ entry.body }}
+      </div>
+      <div id"dynamic-text">
+      {% set currentEntry = entry %}
+        <form method="post" accept-charset="UTF-8">
+          {{ csrfInput() }}
+          {{ actionInput('entries/save-entry') }}
+          {{ hiddenInput('sectionId', '5') }}
+          {{ hiddenInput('enabled', '1') }}
+
+          <div class="field">
+            {{ tag('textarea', {
+              id: 'body',
+              name: 'fields[body][]',
+              text: currentEntry.body|striptags,
+            }) }}
+          </div>
+
+          <button class="btn" type="submit">Opslaan</button>
+        </form>
+      </div>
     </div>
   </div>
 
@@ -68,5 +89,6 @@
 
       <button class="btn" type="submit">Voeg toe</button>
     </form>
+  </div>
 
 {% endblock %}
