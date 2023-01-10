@@ -1,4 +1,4 @@
-dateModified: 1673357571
+dateModified: 1673359740
 email:
   fromEmail: bjorvanh1@student.arteveldehs.be
   fromName: Zawia
@@ -39,10 +39,12 @@ meta:
     6edd9cc7-7f02-42eb-937e-8e242d90d712: Excerpt # Excerpt
     07f120b4-d3e2-4291-9995-a0524335a84e: 'Nieuw Artikel' # Nieuw Artikel
     8a8ed8be-4d9f-46b0-97b7-9787f89f7c99: Menu # Menu
+    8be4852e-195f-4377-b09a-8f1a336b5ea6: 'Mijn Artikels' # Mijn Artikels
     8de2ef2a-917d-4573-a731-2194990b8927: Common # Common
     9b9ff0ef-f17a-4eaf-af42-ae98429b4950: Home # Home
     22d6c214-b6d3-4e35-a9ce-3bc5464a425a: 'Nieuw Artikel' # Nieuw Artikel
     32b71232-2401-44d6-bb54-ccdbd73bddad: Label # Label
+    48dab1eb-6b6e-48f4-8227-82ba85f71da2: 'Mijn Artikels' # Mijn Artikels
     060c715f-7f84-45ab-b444-a372660505fa: Toegang # Toegang
     79c6387a-1ff2-4303-b7d5-5911c124ed85: 'Nieuw verdiepingsdossier' # Nieuw verdiepingsdossier
     82c18cfa-2186-41cc-b3a7-d8d4f28bcd33: Images # Images

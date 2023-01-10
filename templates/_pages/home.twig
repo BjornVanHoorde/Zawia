@@ -18,65 +18,10 @@
 	<div class="latest-articles">
 		<div class="container">
 			<h2 class="text-center">Laatste artikelen</h2>
-			<div
-				class="flex">
-				{# {% for article in articles %} #}
-				<div class="article">
-					<div class="article-image">
-						<img src="{{ alias('@web/assets/article.jpg') }}" alt="article" class="img-responsive center-block"/>
-						<div class="article-author text-right">
-							<small>Author</small>
-						</div>
-					</div>
-					<div class="article-content">
-						<h4>Artikel titel</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur
-							                adipiscing elit, sed do eiusmod tempor
-							                incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-					<a href="#">
-						<span class="div-link"></span>
-					</a>
-				</div>
-				<div class="article">
-					<div class="article-image">
-						<img src="{{ alias('@web/assets/article.jpg') }}" alt="article" class="img-responsive center-block"/>
-						<div class="article-author text-right">
-							<small>Author</small>
-						</div>
-					</div>
-					<div class="article-content">
-						<h4>Artikel titel</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur
-							                adipiscing elit, sed do eiusmod tempor
-							                incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-					<a href="#">
-						<span class="div-link"></span>
-					</a>
-				</div>
-				<div class="article">
-					<div class="article-image">
-						<img src="{{ alias('@web/assets/article.jpg') }}" alt="article" class="img-responsive center-block"/>
-						<div class="article-author text-right">
-							<small>Author</small>
-						</div>
-					</div>
-					<div class="article-content">
-						<h4>Artikel titel</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur
-							                adipiscing elit, sed do eiusmod tempor
-							                incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-					<a href="#">
-						<span class="div-link"></span>
-					</a>
-				</div>
-				{# {% endfor %} #}
+			{% set articles = craft.entries().section(["verdiepingsdossiers", "onderzoeksvragen", "escaperooms", "themadossiers"]).level(1).limit(3) %}
+			<div class="flex">
+				{% include "_includes/articles" with articles %}
 			</div>
-		</div>
-		<div class="button-container center-block">
-			<a href="#" class="btn btn-primary">Bekijk alle artikelen</a>
 		</div>
 	</div>
 
@@ -85,9 +30,9 @@
 			<h2 class="text-center">Thema's</h2>
 			<div class="flex">
 
-				{% set themeCategories = craft.categories().group('themas').all() %}
+				{% set themeCategories = craft.entries().section("themas").inReverse().all() %}
 				{% for theme in themeCategories %}
-					{% set icon = theme.icon.one() %}
+					{% set icon = theme.categoryThemaSingle.one().icon.one() %}
 					<div class="theme text-center">
 						<div class="theme-box">
 							<div class="theme-image center-block">
@@ -96,7 +41,7 @@
 							<div class="theme-content">
 								<h4>{{ theme.title }}</h4>
 							</div>
-							<a href="#">
+							<a href="{{ theme.url }}">
 								<span class="div-link"></span>
 							</a>
 						</div>
