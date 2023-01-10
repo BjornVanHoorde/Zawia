@@ -1,0 +1,55 @@
+fieldLayouts:
+  1b391b2a-3bf6-4f10-b5df-fb69cd39525f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c65f371b-0719-46ed-91ae-bc1f944074ea
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 43850410-f9e9-4de1-aaad-423f84a0d5d8 # Category Thema Single
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b3067115-59af-4f06-9a05-370ed14e8d83
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2ce162e5-7528-4070-82e9-342d7ba0e21f
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: cd2017c1-ed0a-4f13-9c88-3d53c19c619a # Thema's
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,4 +1,4 @@
-dateModified: 1673281266
+dateModified: 1673342452
 email:
   fromEmail: bjorvanh1@student.arteveldehs.be
   fromName: Zawia
@@ -55,10 +55,13 @@ meta:
     82064a65-72dc-4540-b424-e0692a2bbab1: Login # Login
     99601d0e-e7cd-4c78-91b1-c36db3eadd99: Toegang # Toegang
     567278e8-d5ff-4fb3-8e1e-f4c7ed39dfc9: Verdiepingsdossiers # Verdiepingsdossiers
+    30375302-41d5-48b8-9251-6f60f86596b9: Default # Default
+    43850410-f9e9-4de1-aaad-423f84a0d5d8: 'Category Thema Single' # Category Thema Single
     a17e350d-daa8-4b8c-9140-a4668e8b40ef: Zawia # Zawia
     a781d844-0309-4579-81f5-a06f89fe8e0c: Login # Login
     b2874c9f-b905-4009-8994-9088b3ed9c1e: Zawia # Zawia
     c5b2d6ec-5e5e-4fdf-8db7-b6c941319a67: Destination # Destination
+    cd2017c1-ed0a-4f13-9c88-3d53c19c619a: 'Thema''s' # Thema's
     d0a7b5b2-2d89-4806-bd1d-6312e43b8f31: 'Soort Id' # Soort Id
     ec896c9b-91b7-46f8-a839-d56f4da0ae7f: Default # Default
     ed35e35b-52d9-4544-8c98-a128bf571709: Image # Image

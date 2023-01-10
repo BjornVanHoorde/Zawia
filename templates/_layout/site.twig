@@ -42,18 +42,20 @@
 	</header>
 	<div class="header-dropdown hidden">
 		<div class="container">
-			{% set themeCategories = craft.categories().group('themas').all() %}
+			{% set themeCategories = craft.entries().section("themas").inReverse().all() %}
 			{% for theme in themeCategories %}
-				{% set icon = theme.icon.one() %}
+				{% set icon = theme.categoryThemaSingle.one().icon.one() %}
 				{% set cropSetting = {
             mode: 'crop',
             width: 40,
             quality: 80
           } %}
-				<div class="text">
-					<img src="{{ icon.getUrl(cropSetting) }}" alt="{{ icon.alt }}" class="img-responsive center-block"/>
-					<p>{{theme.title}}</p>
-				</div>
+					<div class="text">
+						<img src="{{ icon.getUrl(cropSetting) }}" alt="{{ icon.alt }}" class="img-responsive center-block"/>
+						<a href="{{ theme.url }}">
+							<p>{{theme.title}}</p>
+						</a>
+					</div>
 			{% endfor %}
 		</div>
 	</div>

@@ -22,6 +22,10 @@
     display: flex;
 }
 
+.header-dropdown .container .text a {
+    color: var(--secondary);
+}
+
 .header-dropdown .container .text img {
     margin-right: 0.5rem;
 }

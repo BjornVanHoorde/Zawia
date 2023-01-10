@@ -1,0 +1,53 @@
+{% extends "_layout/site" %}
+
+{% block head %}
+	{{ parent() }}
+	<link rel="stylesheet" href="{{ alias('@web/css/pages/themas.css') }}"/>
+{% endblock %}
+
+{% block scripts %}
+	{{ parent() }}
+	<script src="{{ alias('@web/js/sort-btns.js') }}" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block content %}
+
+	{% include "_includes/title" %}
+
+  {% set themaId = entry.categoryThemaSingle.one().id %}
+  {% set verdiepingsdossiers = craft.entries().section("verdiepingsdossiers").level(1).relatedTo(themaId).all() %}
+  {% set themadossiers = craft.entries().section("themadossiers").level(1).relatedTo(themaId).all() %}
+
+  <div class="container">
+    <div class="buttons">
+      <div class="btn verdiepingsdossiers active" id="verdiepingsdossiers-btn">
+        Verdiepingsdossiers
+      </div>
+      <div class="btn themadossiers" id="themadossiers-btn">
+        Themadossiers
+      </div>
+      <div class="btn escaperooms" id="escaperooms-btn">
+        Escaperooms
+      </div>
+      <div class="btn onderzoeksvragen" id="onderzoeksvragen-btn">
+        Onderzoeksvragen
+      </div>
+    </div>
+    <div class="artikels">
+      <div class="verdiepingsdossiers" id="verdiepingsdossiers"> 
+        Verdiepingsdossiers
+      </div>
+      <div class="themadossiers hidden" id="themadossiers">
+        Themadossiers
+      </div>
+      <div class="escaperooms hidden" id="escaperooms">
+        Escaperooms
+      </div>
+      <div class="onderzoeksvragen hidden" id="onderzoeksvragen">
+        Onderzoeksvragen
+      </div>
+    </div>
+  </div>
+
+
+{% endblock %}
