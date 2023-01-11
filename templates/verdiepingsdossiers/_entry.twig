@@ -1,5 +1,7 @@
 {% extends "_layout/site" %}
 
+{% requireLogin %}
+
 {% block head %}
 	{{ parent() }}
 	<link rel="stylesheet" href="{{ alias('@web/css/structure/verdiepingsdossier.css') }}"/>
@@ -18,23 +20,23 @@
 		<div class="aside">
 
 			{% if entry.parent() %}
-				<h3>
+				<h4>
 					<a href="{{ entry.parent.url }}">{{ entry.parent.title }}</a>
-				</h3>
+				</h4>
 				{% if entry.parent.children().count() > 0 %}
 					{% for child in entry.parent.children().all() %}
-						<h4>
+						<h4 class="sub">
 							<a href="{{ child.url }}">{{ child.title }}</a>
 						</h4>
 					{% endfor %}
 				{% endif %}
 			{% else %}
-				<h3>
+				<h4>
 					<a href="{{ entry.url }}">{{ entry.title }}</a>
-				</h3>
+				</h4>
 				{% if entry.children().count() > 0 %}
 					{% for child in entry.children().all() %}
-						<h4>
+						<h4 class="sub">
 							<a href="{{ child.url }}">{{ child.title }}</a>
 						</h4>
 					{% endfor %}

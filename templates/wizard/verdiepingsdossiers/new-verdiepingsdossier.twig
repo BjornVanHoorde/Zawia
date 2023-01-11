@@ -1,5 +1,7 @@
 {% extends "_layout/site" %}
 
+{% requireLogin %}
+
 {% block head %}
 	{{ parent() }}
 	<link rel="stylesheet" href="{{ alias('@web/css/pages/new.css') }}"/>
