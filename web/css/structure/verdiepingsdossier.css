@@ -1,20 +1,36 @@
 .aside {
   width: 20%;
+  height: 100%;
   background-color: var(--tertiary);
-  padding: 2rem 3.75rem;
+  padding-top: 1rem;
+  min-height: 100vh;
 }
 
 .aside a {
   color: var(--black);
   text-decoration: none;
+  display: block;
+  text-align: center;
   font-weight: bold;
+  width: 100%;
+  padding: 0.5rem 0;
+  cursor: pointer;  
 }
 
-.aside h4.sub {
-  color: var(--black);
-  text-decoration: none;
-  font-weight: bold;
-  margin-left: 1.5rem;
+.aside .title-nav {
+  text-decoration: underline;
+}
+
+.aside a:hover {
+  background-color: var(--secondary);
+}
+
+.aside a.active {
+  background-color: var(--secondary);
+}
+
+.aside a.add-btn:hover {
+  background-color: var(--secondary);
 }
 
 .text {
@@ -24,8 +40,13 @@
   padding-top: 5rem;
 }
 
-.text a.button {
+.text .edit-btns {
   position: absolute;
-  top: 1rem;
+  top: 2rem;
   right: 2rem;
+  display: flex;
+}
+
+.text .edit-btns form{
+  margin-right: 1rem;
 }

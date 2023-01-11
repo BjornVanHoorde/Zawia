@@ -20,40 +20,57 @@
 		<div class="aside">
 
 			{% if entry.parent() %}
-				<h4>
+				<h4 class="title-nav">
 					<a href="{{ entry.parent.url }}">{{ entry.parent.title }}</a>
 				</h4>
 				{% if entry.parent.children().count() > 0 %}
 					{% for child in entry.parent.children().all() %}
-						<h4 class="sub">
-							<a href="{{ child.url }}">{{ child.title }}</a>
-						</h4>
+						{% set activeLink = (craft.app.request.segments|last) == child.slug%}
+						<a class="{{ activeLink ? 'active' : ''  }}" href="{{ child.url }}">
+							<h4>{{ child.title }}</h4>
+						</a>
 					{% endfor %}
 				{% endif %}
 			{% else %}
-				<h4>
+				<h4 class="title-nav">
 					<a href="{{ entry.url }}">{{ entry.title }}</a>
 				</h4>
 				{% if entry.children().count() > 0 %}
 					{% for child in entry.children().all() %}
-						<h4 class="sub">
-							<a href="{{ child.url }}">{{ child.title }}</a>
-						</h4>
+						<a href="{{ child.url }}">
+							<h4>{{ child.title }}</h4>
+						</a>
 					{% endfor %}
 				{% endif %}
 			{% endif %}
 
 			{% if currentUser %}
 				{% if currentUser.id == entry.authorId %}
-					<button class="btn" id="add-topic-btn">+</button>
+					<a class="add-btn" id="add-topic-btn">+</a>
 				{% endif %}
 			{% endif %}
 
 		</div>
 		<div class="text">
-    	{% if currentUser %}
+			{% if currentUser %}
 				{% if currentUser.id == entry.authorId %}
-          <a class="button" href="{{ "#{siteUrl}bewerk-verdiepingsdossier/#{entry.id}" }}">Aanpassen</a>
+					<div class="edit-btns">
+						<form method="post" accept-charset="UTF-8">
+							{{ csrfInput() }}
+							{{ actionInput('entries/save-entry') }}
+							{% if entry.level == 1 %}
+								{{ redirectInput('/') }}
+							{% else %}
+								{{ redirectInput("verdiepingsdossiers/#{entry.parent().slug}") }}
+							{% endif %}
+							{{ redirectInput('/') }}
+							{{ hiddenInput('sectionId', '5') }}
+							{{ hiddenInput('enabled', '0') }}
+							{{ hiddenInput('entryId', entry.id) }}
+							<button class="btn delete" type="submit">Verwijderen</button>
+						</form>
+						<a class="button" href="{{ "#{siteUrl}bewerk-verdiepingsdossier/#{entry.id}" }}">Aanpassen</a>
+					</div>
 				{% endif %}
 			{% endif %}
 
