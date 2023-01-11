@@ -18,6 +18,14 @@
 }
 
 .text {
+  position: relative;
   width: 80%;
   padding: 2rem 3.75rem;
+  padding-top: 5rem;
+}
+
+.text a.button {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
 }

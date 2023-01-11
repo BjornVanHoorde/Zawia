@@ -1,4 +1,4 @@
-dateModified: 1673359740
+dateModified: 1673432001
 email:
   fromEmail: bjorvanh1@student.arteveldehs.be
   fromName: Zawia
@@ -52,6 +52,7 @@ meta:
     391bf39d-15d7-4339-894c-d2e5678179fd: 'Category Soort' # Category Soort
     412bccbe-4151-4977-a605-8d9988b84eaa: Uploads # Uploads
     1544c70f-6ecc-45b1-999e-41aa2e4a5825: Body # Body
+    9143d726-4edc-42e6-bd7e-963498cf1eac: 'Bewerk Verdiepingsdossier' # Bewerk Verdiepingsdossier
     11488e99-48cf-4b89-ae9e-74a299337c18: 'Category Thema' # Category Thema
     58855ae7-51e0-4f88-9827-a90a6b8a70e5: 'Menu Items' # Menu Items
     82064a65-72dc-4540-b424-e0692a2bbab1: Login # Login
@@ -62,6 +63,7 @@ meta:
     a17e350d-daa8-4b8c-9140-a4668e8b40ef: Zawia # Zawia
     a781d844-0309-4579-81f5-a06f89fe8e0c: Login # Login
     b2874c9f-b905-4009-8994-9088b3ed9c1e: Zawia # Zawia
+    b5332235-c79e-406f-82c9-faa9fe658438: 'Bewerk Verdiepingsdossier' # Bewerk Verdiepingsdossier
     c5b2d6ec-5e5e-4fdf-8db7-b6c941319a67: Destination # Destination
     cd2017c1-ed0a-4f13-9c88-3d53c19c619a: 'Thema''s' # Thema's
     d0a7b5b2-2d89-4806-bd1d-6312e43b8f31: 'Soort Id' # Soort Id

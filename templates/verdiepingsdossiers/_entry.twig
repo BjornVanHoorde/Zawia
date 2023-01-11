@@ -14,89 +14,78 @@
 
 	{% include "_includes/title" %}
 
-  <div class="flex">
-    <div class="aside">
+	<div class="flex">
+		<div class="aside">
 
-      {% if entry.parent() %}
-        <h3><a href="{{ entry.parent.url }}">{{ entry.parent.title }}</a></h3>
-        {% if entry.parent.children().count() > 0 %}
-          {% for child in entry.parent.children().all() %}
-            <h4><a href="{{ child.url }}">{{ child.title }}</a></h4>
-          {% endfor %}
-        {% endif %}
-      {% else %}
-        <h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
-        {% if entry.children().count() > 0 %}
-          {% for child in entry.children().all() %}
-            <h4><a href="{{ child.url }}">{{ child.title }}</a></h4>
-          {% endfor %}
-        {% endif %}
-      {% endif %}
+			{% if entry.parent() %}
+				<h3>
+					<a href="{{ entry.parent.url }}">{{ entry.parent.title }}</a>
+				</h3>
+				{% if entry.parent.children().count() > 0 %}
+					{% for child in entry.parent.children().all() %}
+						<h4>
+							<a href="{{ child.url }}">{{ child.title }}</a>
+						</h4>
+					{% endfor %}
+				{% endif %}
+			{% else %}
+				<h3>
+					<a href="{{ entry.url }}">{{ entry.title }}</a>
+				</h3>
+				{% if entry.children().count() > 0 %}
+					{% for child in entry.children().all() %}
+						<h4>
+							<a href="{{ child.url }}">{{ child.title }}</a>
+						</h4>
+					{% endfor %}
+				{% endif %}
+			{% endif %}
 
-      {% if currentUser %}
-        {% if currentUser.id == entry.authorId %}
-          <button class="btn" id="add-topic-btn">+</button>
-        {% endif %}
-      {% endif %}
+			{% if currentUser %}
+				{% if currentUser.id == entry.authorId %}
+					<button class="btn" id="add-topic-btn">+</button>
+				{% endif %}
+			{% endif %}
 
-    </div>
-    <div class="text">
-      <div id="static-text">
-      {{ entry.body }}
-      </div>
-      <div id"dynamic-text">
-      {% set currentEntry = entry %}
-        <form method="post" accept-charset="UTF-8">
-          {{ csrfInput() }}
-          {{ actionInput('entries/save-entry') }}
-          {{ redirectInput('verdiepingsdossiers/{slug}') }}
-          {{ hiddenInput('sectionId', '5') }}
-          {{ hiddenInput('enabled', '1') }}
+		</div>
+		<div class="text">
+    	{% if currentUser %}
+				{% if currentUser.id == entry.authorId %}
+          <a class="button" href="{{ "#{siteUrl}bewerk-verdiepingsdossier/#{entry.id}" }}">Aanpassen</a>
+				{% endif %}
+			{% endif %}
 
-          <div class="field">
-            <label for="body">Inhoud</label>
-            {{ tag('textarea', {
-              id: 'body',
-              name: 'fields[body]',
-              text: currentEntry.body,
-              class: 'editor',
-            }) }}
-          </div>
+			{{ entry.body }}
+		</div>
+	</div>
+</div>
 
-          <button class="btn" type="submit">Opslaan</button>
-        </form>
-      </div>
-    </div>
-  </div>
+<div class="add-topic hidden" id="add-topic">
+	<form method="post" accept-charset="UTF-8">
+		<i class="fa-solid fa-xmark" id="add-topic-close-btn"></i>
+		<h3>Voeg een onderdeel toe</h3>
+		{{ csrfInput() }}
+		{{ actionInput('entries/save-entry') }}
+		{{ hiddenInput('sectionId', '5') }}
+		{{ hiddenInput('enabled', '1') }}
 
-  <div class="add-topic hidden" id="add-topic">
-    <form method="post" accept-charset="UTF-8">
-      <i class="fa-solid fa-xmark" id="add-topic-close-btn"></i>
-      <h3>Voeg een onderdeel toe</h3>
-      {{ csrfInput() }}
-      {{ actionInput('entries/save-entry') }}
-      {{ hiddenInput('sectionId', '5') }}
-      {{ hiddenInput('enabled', '1') }}
-
-      <label for="title">Naam van onderdeel</label>
-      {{ input('text', 'title', "", {
+		<label for="title">Naam van onderdeel</label>
+		{{ input('text', 'title', "", {
         id: 'title',
       }) }}
 
-      {% if entry.parent() %}
-        {{ input('number', 'parentId', entry.parent.id, {
+		{% if entry.parent() %}
+			{{ input('number', 'parentId', entry.parent.id, {
           id: 'parentId',
           class: 'hidden',
         }) }}
-      {% else %}
-        {{ input('number', 'parentId', entry.id, {
+		{% else %}
+			{{ input('number', 'parentId', entry.id, {
           id: 'parentId',
           class: 'hidden',
         }) }}
-      {% endif %}
+		{% endif %}
 
-      <button class="btn" type="submit">Voeg toe</button>
-    </form>
-  </div>
-
-{% endblock %}
+		<button class="btn" type="submit">Voeg toe</button>
+	</form>
+</div>{% endblock %}

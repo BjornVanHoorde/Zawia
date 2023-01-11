@@ -1,0 +1,116 @@
+{% extends "_layout/site" %}
+
+{% block head %}
+	{{ parent() }}
+	<link rel="stylesheet" href="{{ alias('@web/css/pages/new.css') }}"/>
+{% endblock %}
+
+{% block content %}
+
+{% set entry = craft.entries.id(craft.app.request.segments[1]).one() %}
+
+	{% include "_includes/title" %}
+
+<div class="container">
+	<form class="new-form" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
+			{{ csrfInput() }}
+			{{ actionInput('entries/save-entry') }}
+			{% if entry.children|length > 0 %}
+				{{ redirectInput('verdiepingsdossiers/{slug}') }}
+			{% else %}
+				{{ redirectInput("verdiepingsdossiers/#{entry.parent().slug}/{slug}") }}
+			{% endif %}
+			{{ hiddenInput('sectionId', '5') }}
+			{{ hiddenInput('enabled', '1') }}
+			{{ hiddenInput('entryId', entry.id) }}
+
+		<div class="flex" >
+			<div class="form-text">
+				<div class="field">
+					<label for="title">Naam van het artikel</label>
+					{{ input('text', 'title', entry.title, {
+						id: 'title',
+					}) }}
+					{{ _self.errorList(entry.getErrors('title')) }}
+				</div>
+
+				<div class="field">
+					<label for="excerpt">Intro van het artikel
+						<span>(Dit is zichtbaar bij de lijstweergave van artikels)</span>
+					</label>
+					{{ tag('textarea', {
+						id: 'excerpt',
+						name: 'fields[excerpt]',
+						text: entry.excerpt,
+					}) }}
+					{{ _self.errorList(entry.getErrors('excerpt')) }}
+				</div>
+			</div>
+
+			{% if entry.children|length > 0 %}
+				<div class="form-image">
+					<div class="field">
+						<label for="image">Artikel afbeelding<br><span>(Dit is zichtbaar bij de lijstweergave van artikels)</span></label>
+						{{ input('file', 'fields[image]', entry.image.one() ,{
+							id: 'image',
+						}) }}
+						{{ _self.errorList(entry.getErrors('image')) }}
+					</div>
+				</div>
+			{% endif %}
+		</div>
+
+		<div class="field">
+			<label for="body">Artikel tekst</label>
+			{{ tag('textarea', {
+				id: 'body',
+				name: 'fields[body]',
+				text: entry.body,
+				class: 'editor'
+			}) }}
+			{{ _self.errorList(entry.getErrors('body')) }}
+
+		{% if entry.children|length > 0 %}
+			<div class="field">
+				<label for="categoryThema">Thema's</label>
+				<div class="checkboxes flex">
+					{% set themes = craft.categories().group("themas").all() %}
+					{% for theme in themes %}
+
+						{% set checked = false %}
+						{% for category in entry.categoryThema.all() %}
+							{% if category.id == theme.id %}
+								{% set checked = true %}
+							{% endif %}
+						{% endfor %}
+
+						<label>
+							{% if checked %}
+								{{ input('checkbox', 'fields[categoryThema][]', theme.id, {
+									id: theme.slug,
+									checked: "false"
+								}) }}
+							{% else %}
+								{{ input('checkbox', 'fields[categoryThema][]', theme.id, {
+									id: theme.slug,
+								}) }}
+							{% endif %}
+							{{ theme.title }}</label>
+					{% endfor %}
+					{{ _self.errorList(entry.getErrors('categoryThema')) }}
+				</div>
+			</div>
+		{% endif %}
+
+		<button class="btn" type="submit">Opslaan</button>
+
+	</form>
+
+	{% macro errorList(errors) %}
+		{% if errors %}
+			{{ ul(errors, {class: 'errors'}) }}
+		{% endif %}
+	{% endmacro %}
+</div>
+
+{% endblock %}

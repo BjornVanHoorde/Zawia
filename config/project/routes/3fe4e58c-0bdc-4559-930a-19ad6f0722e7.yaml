@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 1
+template: wizard/verdiepingsdossiers/edit-verdiepingsdossier
+uriParts:
+  - bewerk-verdiepingsdossier/
+  -
+    - number
+    - \d+
+uriPattern: 'bewerk-verdiepingsdossier/<number:\d+>'

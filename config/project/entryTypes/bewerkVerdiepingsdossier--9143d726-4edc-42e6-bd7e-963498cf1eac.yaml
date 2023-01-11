@@ -1,0 +1,43 @@
+fieldLayouts:
+  a5b5ec57-0ee1-4b81-a0a0-9881d7be8524:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 1aeecac7-b491-4590-934b-4aa397d2640d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c9f1cee7-8e09-497d-89f0-dd5a18c4dfaa
+        userCondition: null
+handle: bewerkVerdiepingsdossier
+hasTitleField: false
+name: 'Bewerk Verdiepingsdossier'
+section: b5332235-c79e-406f-82c9-faa9fe658438 # Bewerk Verdiepingsdossier
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
