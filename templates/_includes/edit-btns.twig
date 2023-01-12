@@ -7,15 +7,15 @@
 				{% if entry.level == 1 %}
 					{{ redirectInput('/') }}
 				{% else %}
-					{{ redirectInput("verdiepingsdossiers/#{entry.parent().slug}") }}
+					{{ redirectInput("#{entry.section.handle}/#{entry.parent().slug}") }}
 				{% endif %}
 				{{ redirectInput('/') }}
-				{{ hiddenInput('sectionId', '5') }}
+				{{ hiddenInput('sectionId', "#{entry.sectionId}") }}
 				{{ hiddenInput('enabled', '0') }}
 				{{ hiddenInput('entryId', entry.id) }}
 				<button class="btn delete" type="submit">Verwijderen</button>
 			</form>
-			<a class="button" href="{{ "#{siteUrl}bewerk-verdiepingsdossier/#{entry.id}" }}">Aanpassen</a>
+			<a class="button" href="{{ "#{siteUrl}bewerk-#{entry.section.handle}/#{entry.id}" }}">Aanpassen</a>
 		</div>
 	{% endif %}
 {% endif %}

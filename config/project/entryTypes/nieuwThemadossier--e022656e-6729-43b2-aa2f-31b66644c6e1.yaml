@@ -1,0 +1,43 @@
+fieldLayouts:
+  66a9bed4-d928-42d9-8a3d-71ce24072ef5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 35e0be06-4b33-4159-8477-1e8d4dd20fe4
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 8765ee37-0420-4570-a12d-9fead75a2007
+        userCondition: null
+handle: nieuwThemadossier
+hasTitleField: false
+name: 'Nieuw Themadossier'
+section: b66552a3-1552-423b-b7fa-1db6b7a7876a # Nieuw Themadossier
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

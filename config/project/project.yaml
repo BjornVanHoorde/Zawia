@@ -1,4 +1,4 @@
-dateModified: 1673516705
+dateModified: 1673530092
 email:
   fromEmail: bjorvanh1@student.arteveldehs.be
   fromName: Zawia
@@ -36,8 +36,9 @@ meta:
     3fffcb82-84de-4232-ba1a-3dfd2f0fc37d: 'Public Schema' # Public Schema
     5e5a77ad-3631-4235-b4a1-75dcf93f3eae: Icon # Icon
     5fdf1b3c-dbce-4c01-a2d9-59a8af774de3: Label # Label
-    6c4f9f9f-a163-4996-96f5-f3f93649b5f6: Verdiepingsdossiers # Verdiepingsdossiers
+    6c4f9f9f-a163-4996-96f5-f3f93649b5f6: Dossiers # Dossiers
     6edd9cc7-7f02-42eb-937e-8e242d90d712: Excerpt # Excerpt
+    7dd22add-5475-42a6-93aa-1133b6797edc: Default # Default
     07f120b4-d3e2-4291-9995-a0524335a84e: 'Nieuw Artikel' # Nieuw Artikel
     8a8ed8be-4d9f-46b0-97b7-9787f89f7c99: Menu # Menu
     8be4852e-195f-4377-b09a-8f1a336b5ea6: 'Mijn Artikels' # Mijn Artikels
@@ -53,6 +54,8 @@ meta:
     391bf39d-15d7-4339-894c-d2e5678179fd: 'Category Soort' # Category Soort
     412bccbe-4151-4977-a605-8d9988b84eaa: Uploads # Uploads
     1544c70f-6ecc-45b1-999e-41aa2e4a5825: Body # Body
+    03861cc1-25e9-46f7-a3d0-3370e4881f5e: 'Bewerk themadossier' # Bewerk themadossier
+    4481ba63-3323-44b0-a5f9-783bd08e3174: 'Bewerk themadossier' # Bewerk themadossier
     9143d726-4edc-42e6-bd7e-963498cf1eac: 'Bewerk Verdiepingsdossier' # Bewerk Verdiepingsdossier
     11488e99-48cf-4b89-ae9e-74a299337c18: 'Category Thema' # Category Thema
     58855ae7-51e0-4f88-9827-a90a6b8a70e5: 'Menu Items' # Menu Items
@@ -64,10 +67,13 @@ meta:
     a17e350d-daa8-4b8c-9140-a4668e8b40ef: Zawia # Zawia
     a781d844-0309-4579-81f5-a06f89fe8e0c: Login # Login
     b2874c9f-b905-4009-8994-9088b3ed9c1e: Zawia # Zawia
+    b66552a3-1552-423b-b7fa-1db6b7a7876a: 'Nieuw Themadossier' # Nieuw Themadossier
     b5332235-c79e-406f-82c9-faa9fe658438: 'Bewerk Verdiepingsdossier' # Bewerk Verdiepingsdossier
     c5b2d6ec-5e5e-4fdf-8db7-b6c941319a67: Destination # Destination
     cd2017c1-ed0a-4f13-9c88-3d53c19c619a: 'Thema''s' # Thema's
     d0a7b5b2-2d89-4806-bd1d-6312e43b8f31: 'Soort Id' # Soort Id
+    e022656e-6729-43b2-aa2f-31b66644c6e1: 'Nieuw Themadossier' # Nieuw Themadossier
+    e4b10fcc-314a-4dbe-9c1e-71bbe01f9d07: Themadossiers # Themadossiers
     ec896c9b-91b7-46f8-a839-d56f4da0ae7f: Default # Default
     ed35e35b-52d9-4544-8c98-a128bf571709: Image # Image
     f2ce5aef-2433-48de-b247-ad9d2c1ccf34: Header # Header

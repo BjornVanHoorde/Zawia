@@ -1,7 +1,7 @@
 defaultPlacement: end
 enableVersioning: true
-handle: bewerkVerdiepingsdossier
-name: 'Bewerk Verdiepingsdossier'
+handle: themadossiers
+name: Themadossiers
 previewTargets:
   -
     __assoc__:
@@ -19,6 +19,9 @@ siteSettings:
   b2874c9f-b905-4009-8994-9088b3ed9c1e: # Zawia
     enabledByDefault: true
     hasUrls: true
-    template: wizard/verdiepingsdossiers/bewerk-verdiepingsdossier
-    uriFormat: 'bewerk-verdiepingsdossiers/{number}'
-type: single
+    template: themadossiers/_entry
+    uriFormat: 'themadossiers/{slug}'
+structure:
+  maxLevels: null
+  uid: 51e7a364-57d6-41c2-bf1e-511575e1de24
+type: structure

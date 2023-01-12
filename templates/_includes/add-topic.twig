@@ -4,7 +4,7 @@
 		<h3>Voeg een onderdeel toe</h3>
 		{{ csrfInput() }}
 		{{ actionInput('entries/save-entry') }}
-		{{ hiddenInput('sectionId', '5') }}
+		{{ hiddenInput('sectionId', "#{entry.sectionId}") }}
 		{{ hiddenInput('enabled', '1') }}
 
 		<label for="title">Naam van onderdeel</label>

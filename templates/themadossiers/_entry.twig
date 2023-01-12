@@ -1,0 +1,36 @@
+{% extends "_layout/site" %}
+
+{% requireLogin %}
+
+{% block head %}
+	{{ parent() }}
+	<link rel="stylesheet" href="{{ alias('@web/css/structure/verdiepingsdossier.css') }}"/>
+{% endblock %}
+
+{% block scripts %}
+	{{ parent() }}
+	<script src="{{ alias('@web/js/add-topic.js') }}" crossorigin="anonymous"></script>
+{% endblock %}
+
+{% block content %}
+
+	{% include "_includes/title" %}
+
+	<div class="flex">
+		
+		{% include "_includes/aside" %}
+
+		<div class="text">
+
+			{% include "_includes/category-tags" %}
+
+			{% include "_includes/edit-btns" %}
+
+			{{ entry.body }}
+		</div>
+	</div>
+</div>
+
+{% include "_includes/add-topic" %}
+
+{% endblock %}

@@ -1,0 +1,43 @@
+fieldLayouts:
+  8af65c7a-321c-4fd6-944d-9bdcd414f6ce:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 22028b62-979d-481c-bf25-2a1650c06581
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9f579fc0-9726-4f94-877b-7fe3e0efb858
+        userCondition: null
+handle: bewerkThemadossier
+hasTitleField: false
+name: 'Bewerk themadossier'
+section: 4481ba63-3323-44b0-a5f9-783bd08e3174 # Bewerk themadossier
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,9 @@
+siteUid: null
+sortOrder: 2
+template: wizard/themadossiers/edit-themadossier
+uriParts:
+  - bewerk-themadossiers/
+  -
+    - number
+    - \d+
+uriPattern: 'bewerk-themadossiers/<number:\d+>'
