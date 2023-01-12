@@ -1,0 +1,14 @@
+columnSuffix: aujtkbji
+contentColumnType: string(500)
+fieldGroup: 4db5ded7-a0be-4378-8419-990f51fed017 # Edu Escaperooms
+handle: presentationLink
+instructions: null
+name: 'Presentation Link'
+searchable: false
+settings:
+  maxLength: 500
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

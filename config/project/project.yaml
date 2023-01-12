@@ -1,4 +1,4 @@
-dateModified: 1673530092
+dateModified: 1673534556
 email:
   fromEmail: bjorvanh1@student.arteveldehs.be
   fromName: Zawia
@@ -34,6 +34,7 @@ meta:
     2a0a7a45-546a-4b7a-9f90-8f841c8f6c44: Students # Students
     2de30c04-8173-4819-88a1-35c218877fa6: Artikelsoorten # Artikelsoorten
     3fffcb82-84de-4232-ba1a-3dfd2f0fc37d: 'Public Schema' # Public Schema
+    4db5ded7-a0be-4378-8419-990f51fed017: 'Edu Escaperooms' # Edu Escaperooms
     5e5a77ad-3631-4235-b4a1-75dcf93f3eae: Icon # Icon
     5fdf1b3c-dbce-4c01-a2d9-59a8af774de3: Label # Label
     6c4f9f9f-a163-4996-96f5-f3f93649b5f6: Dossiers # Dossiers
@@ -50,11 +51,13 @@ meta:
     060c715f-7f84-45ab-b444-a372660505fa: Toegang # Toegang
     79c6387a-1ff2-4303-b7d5-5911c124ed85: 'Nieuw verdiepingsdossier' # Nieuw verdiepingsdossier
     82c18cfa-2186-41cc-b3a7-d8d4f28bcd33: Images # Images
+    199d7ef8-e908-47e0-ba2f-f4f75f2cb3b6: Default # Default
     299fffcc-2678-4d7b-a003-3c64178d734d: 'Thema''s' # Thema's
     391bf39d-15d7-4339-894c-d2e5678179fd: 'Category Soort' # Category Soort
     412bccbe-4151-4977-a605-8d9988b84eaa: Uploads # Uploads
     1544c70f-6ecc-45b1-999e-41aa2e4a5825: Body # Body
     03861cc1-25e9-46f7-a3d0-3370e4881f5e: 'Bewerk themadossier' # Bewerk themadossier
+    3871e358-1e8f-4ba2-a077-76520af3d9f7: 'Presentation Link' # Presentation Link
     4481ba63-3323-44b0-a5f9-783bd08e3174: 'Bewerk themadossier' # Bewerk themadossier
     9143d726-4edc-42e6-bd7e-963498cf1eac: 'Bewerk Verdiepingsdossier' # Bewerk Verdiepingsdossier
     11488e99-48cf-4b89-ae9e-74a299337c18: 'Category Thema' # Category Thema
@@ -66,6 +69,7 @@ meta:
     43850410-f9e9-4de1-aaad-423f84a0d5d8: 'Category Thema Single' # Category Thema Single
     a17e350d-daa8-4b8c-9140-a4668e8b40ef: Zawia # Zawia
     a781d844-0309-4579-81f5-a06f89fe8e0c: Login # Login
+    abee3b12-8257-485d-8573-c0268d3fd8b4: 'Edu Escaperooms' # Edu Escaperooms
     b2874c9f-b905-4009-8994-9088b3ed9c1e: Zawia # Zawia
     b66552a3-1552-423b-b7fa-1db6b7a7876a: 'Nieuw Themadossier' # Nieuw Themadossier
     b5332235-c79e-406f-82c9-faa9fe658438: 'Bewerk Verdiepingsdossier' # Bewerk Verdiepingsdossier

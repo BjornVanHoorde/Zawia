@@ -1,0 +1,8 @@
+.presentation {
+  margin: 2rem 0;
+}
+
+.presentation iframe {
+  display: block;
+  margin: 0 auto;
+}
