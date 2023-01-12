@@ -34,11 +34,12 @@
 
 				<div class="field">
 					<label for="excerpt">Intro van het artikel
-						<span>(Dit is zichtbaar bij de lijstweergave van artikels)</span>
+						<span>(Dit is zichtbaar bij de lijstweergave van artikels, max 255 tekens)</span>
 					</label>
 					{{ tag('textarea', {
 						id: 'excerpt',
 						name: 'fields[excerpt]',
+						maxLength: 255,
 					}) }}
 					{{ _self.errorList(entry.getErrors('excerpt')) }}
 				</div>

@@ -1,4 +1,4 @@
-dateModified: 1673432001
+dateModified: 1673516705
 email:
   fromEmail: bjorvanh1@student.arteveldehs.be
   fromName: Zawia
@@ -31,6 +31,7 @@ fs:
 meta:
   __names__:
     0ee66cd5-5e81-452f-af33-df097cae35de: Soortid # Soortid
+    2a0a7a45-546a-4b7a-9f90-8f841c8f6c44: Students # Students
     2de30c04-8173-4819-88a1-35c218877fa6: Artikelsoorten # Artikelsoorten
     3fffcb82-84de-4232-ba1a-3dfd2f0fc37d: 'Public Schema' # Public Schema
     5e5a77ad-3631-4235-b4a1-75dcf93f3eae: Icon # Icon
@@ -91,9 +92,3 @@ system:
   name: Zawia
   schemaVersion: 4.0.0.9
   timeZone: America/Los_Angeles
-users:
-  allowPublicRegistration: false
-  defaultGroup: null
-  photoSubpath: null
-  photoVolumeUid: null
-  requireEmailVerification: true

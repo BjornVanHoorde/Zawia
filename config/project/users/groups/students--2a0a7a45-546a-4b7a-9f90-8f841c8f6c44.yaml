@@ -1,0 +1,25 @@
+description: ''
+handle: students
+name: Students
+permissions:
+  - 'createentries:567278e8-d5ff-4fb3-8e1e-f4c7ed39dfc9' # Verdiepingsdossiers
+  - 'createfolders:412bccbe-4151-4977-a605-8d9988b84eaa' # Uploads
+  - 'deleteassets:412bccbe-4151-4977-a605-8d9988b84eaa' # Uploads
+  - 'deleteentries:567278e8-d5ff-4fb3-8e1e-f4c7ed39dfc9' # Verdiepingsdossiers
+  - 'editimages:412bccbe-4151-4977-a605-8d9988b84eaa' # Uploads
+  - 'replacefiles:412bccbe-4151-4977-a605-8d9988b84eaa' # Uploads
+  - 'saveassets:412bccbe-4151-4977-a605-8d9988b84eaa' # Uploads
+  - 'saveentries:567278e8-d5ff-4fb3-8e1e-f4c7ed39dfc9' # Verdiepingsdossiers
+  - 'viewassets:412bccbe-4151-4977-a605-8d9988b84eaa' # Uploads
+  - 'viewcategories:299fffcc-2678-4d7b-a003-3c64178d734d' # Thema's
+  - 'viewcategories:2de30c04-8173-4819-88a1-35c218877fa6' # Artikelsoorten
+  - 'viewentries:22d6c214-b6d3-4e35-a9ce-3bc5464a425a' # Nieuw Artikel
+  - 'viewentries:48dab1eb-6b6e-48f4-8227-82ba85f71da2' # Mijn Artikels
+  - 'viewentries:567278e8-d5ff-4fb3-8e1e-f4c7ed39dfc9' # Verdiepingsdossiers
+  - 'viewentries:79c6387a-1ff2-4303-b7d5-5911c124ed85' # Nieuw verdiepingsdossier
+  - 'viewentries:82064a65-72dc-4540-b424-e0692a2bbab1' # Login
+  - 'viewentries:99601d0e-e7cd-4c78-91b1-c36db3eadd99' # Toegang
+  - 'viewentries:9b9ff0ef-f17a-4eaf-af42-ae98429b4950' # Home
+  - 'viewentries:b5332235-c79e-406f-82c9-faa9fe658438' # Bewerk Verdiepingsdossier
+  - 'viewentries:cd2017c1-ed0a-4f13-9c88-3d53c19c619a' # Thema's
+  - 'viewpeerassets:412bccbe-4151-4977-a605-8d9988b84eaa' # Uploads

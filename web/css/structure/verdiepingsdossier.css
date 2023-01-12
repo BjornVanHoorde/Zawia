@@ -3,7 +3,7 @@
   height: 100%;
   background-color: var(--tertiary);
   padding-top: 1rem;
-  min-height: 100vh;
+  
 }
 
 .aside a {
@@ -36,8 +36,8 @@
 .text {
   position: relative;
   width: 80%;
-  padding: 2rem 3.75rem;
-  padding-top: 5rem;
+  padding: 2rem 5rem;
+  padding-top: 8rem;
 }
 
 .text .edit-btns {
