@@ -1,0 +1,21 @@
+{% if currentUser %}
+	{% if currentUser.id == entry.authorId %}
+		<div class="edit-btns">
+			<form method="post" accept-charset="UTF-8">
+				{{ csrfInput() }}
+				{{ actionInput('entries/save-entry') }}
+				{% if entry.level == 1 %}
+					{{ redirectInput('/') }}
+				{% else %}
+					{{ redirectInput("verdiepingsdossiers/#{entry.parent().slug}") }}
+				{% endif %}
+				{{ redirectInput('/') }}
+				{{ hiddenInput('sectionId', '5') }}
+				{{ hiddenInput('enabled', '0') }}
+				{{ hiddenInput('entryId', entry.id) }}
+				<button class="btn delete" type="submit">Verwijderen</button>
+			</form>
+			<a class="button" href="{{ "#{siteUrl}bewerk-verdiepingsdossier/#{entry.id}" }}">Aanpassen</a>
+		</div>
+	{% endif %}
+{% endif %}

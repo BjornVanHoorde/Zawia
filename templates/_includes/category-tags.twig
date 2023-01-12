@@ -1,0 +1,8 @@
+<div class="categories">
+	{% for category in entry.categoryThema.all() %}
+		{% set uri = craft.entries.section("themas").relatedTo(category).one().uri %}
+		<div class="category">
+			<a href="{{ "#{siteUrl}#{uri}" }}">{{ category.title }}</a>
+		</div>
+	{% endfor %}
+</div>

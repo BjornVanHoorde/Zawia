@@ -1,52 +1,6 @@
-.aside {
-  width: 20%;
-  height: 100%;
-  background-color: var(--tertiary);
-  padding-top: 1rem;
-  
-}
-
-.aside a {
-  color: var(--black);
-  text-decoration: none;
-  display: block;
-  text-align: center;
-  font-weight: bold;
-  width: 100%;
-  padding: 0.5rem 0;
-  cursor: pointer;  
-}
-
-.aside .title-nav {
-  text-decoration: underline;
-}
-
-.aside a:hover {
-  background-color: var(--secondary);
-}
-
-.aside a.active {
-  background-color: var(--secondary);
-}
-
-.aside a.add-btn:hover {
-  background-color: var(--secondary);
-}
-
 .text {
   position: relative;
   width: 80%;
   padding: 2rem 5rem;
   padding-top: 8rem;
-}
-
-.text .edit-btns {
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  display: flex;
-}
-
-.text .edit-btns form{
-  margin-right: 1rem;
 }

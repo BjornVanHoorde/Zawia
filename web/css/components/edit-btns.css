@@ -1,0 +1,10 @@
+.edit-btns {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+}
+
+.edit-btns form {
+  margin-right: 1rem;
+}

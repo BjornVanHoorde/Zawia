@@ -17,102 +17,20 @@
 	{% include "_includes/title" %}
 
 	<div class="flex">
-		<div class="aside">
+		
+		{% include "_includes/aside" %}
 
-			{% if entry.parent() %}
-				<h4 class="title-nav">
-					<a href="{{ entry.parent.url }}">{{ entry.parent.title }}</a>
-				</h4>
-				{% if entry.parent.children().count() > 0 %}
-					{% for child in entry.parent.children().all() %}
-						{% set activeLink = (craft.app.request.segments|last) == child.slug%}
-						<a class="{{ activeLink ? 'active' : ''  }}" href="{{ child.url }}">
-							<h4>{{ child.title }}</h4>
-						</a>
-					{% endfor %}
-				{% endif %}
-			{% else %}
-				<h4 class="title-nav">
-					<a href="{{ entry.url }}">{{ entry.title }}</a>
-				</h4>
-				{% if entry.children().count() > 0 %}
-					{% for child in entry.children().all() %}
-						<a href="{{ child.url }}">
-							<h4>{{ child.title }}</h4>
-						</a>
-					{% endfor %}
-				{% endif %}
-			{% endif %}
-
-			{% if currentUser %}
-				{% if currentUser.id == entry.authorId %}
-					<a class="add-btn" id="add-topic-btn">+</a>
-				{% endif %}
-			{% endif %}
-
-		</div>
 		<div class="text">
-			<div class="categories">
-				{% for category in entry.categoryThema.all() %}
-					{% set uri = craft.entries.section("themas").relatedTo(category).one().uri %}
-					<div class="category">
-						<a href="{{ "#{siteUrl}#{uri}" }}">{{ category.title }}</a>
-					</div>
-				{% endfor %}
-			</div>
-			{% if currentUser %}
-				{% if currentUser.id == entry.authorId %}
-					<div class="edit-btns">
-						<form method="post" accept-charset="UTF-8">
-							{{ csrfInput() }}
-							{{ actionInput('entries/save-entry') }}
-							{% if entry.level == 1 %}
-								{{ redirectInput('/') }}
-							{% else %}
-								{{ redirectInput("verdiepingsdossiers/#{entry.parent().slug}") }}
-							{% endif %}
-							{{ redirectInput('/') }}
-							{{ hiddenInput('sectionId', '5') }}
-							{{ hiddenInput('enabled', '0') }}
-							{{ hiddenInput('entryId', entry.id) }}
-							<button class="btn delete" type="submit">Verwijderen</button>
-						</form>
-						<a class="button" href="{{ "#{siteUrl}bewerk-verdiepingsdossier/#{entry.id}" }}">Aanpassen</a>
-					</div>
-				{% endif %}
-			{% endif %}
+
+			{% include "_includes/category-tags" %}
+
+			{% include "_includes/edit-btns" %}
 
 			{{ entry.body }}
 		</div>
 	</div>
 </div>
 
-<div class="add-topic hidden" id="add-topic">
-	<form method="post" accept-charset="UTF-8">
-		<i class="fa-solid fa-xmark" id="add-topic-close-btn"></i>
-		<h3>Voeg een onderdeel toe</h3>
-		{{ csrfInput() }}
-		{{ actionInput('entries/save-entry') }}
-		{{ hiddenInput('sectionId', '5') }}
-		{{ hiddenInput('enabled', '1') }}
+{% include "_includes/add-topic" %}
 
-		<label for="title">Naam van onderdeel</label>
-		{{ input('text', 'title', "", {
-        id: 'title',
-      }) }}
-
-		{% if entry.parent() %}
-			{{ input('number', 'parentId', entry.parent.id, {
-          id: 'parentId',
-          class: 'hidden',
-        }) }}
-		{% else %}
-			{{ input('number', 'parentId', entry.id, {
-          id: 'parentId',
-          class: 'hidden',
-        }) }}
-		{% endif %}
-
-		<button class="btn" type="submit">Voeg toe</button>
-	</form>
-</div>{% endblock %}
+{% endblock %}

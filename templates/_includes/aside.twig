@@ -1,0 +1,34 @@
+<div class="aside">
+
+	{% if entry.parent() %}
+		<h4 class="title-nav">
+			<a href="{{ entry.parent.url }}">{{ entry.parent.title }}</a>
+		</h4>
+		{% if entry.parent.children().count() > 0 %}
+			{% for child in entry.parent.children().all() %}
+				{% set activeLink = (craft.app.request.segments|last) == child.slug%}
+				<a class="{{ activeLink ? 'active' : '' }}" href="{{ child.url }}">
+					<h4>{{ child.title }}</h4>
+				</a>
+			{% endfor %}
+		{% endif %}
+	{% else %}
+		<h4 class="title-nav">
+			<a href="{{ entry.url }}">{{ entry.title }}</a>
+		</h4>
+		{% if entry.children().count() > 0 %}
+			{% for child in entry.children().all() %}
+				<a href="{{ child.url }}">
+					<h4>{{ child.title }}</h4>
+				</a>
+			{% endfor %}
+		{% endif %}
+	{% endif %}
+
+	{% if currentUser %}
+		{% if currentUser.id == entry.authorId %}
+			<a class="add-btn" id="add-topic-btn">+</a>
+		{% endif %}
+	{% endif %}
+
+</div>

@@ -1,0 +1,29 @@
+<div class="add-topic hidden" id="add-topic">
+	<form method="post" accept-charset="UTF-8">
+		<i class="fa-solid fa-xmark" id="add-topic-close-btn"></i>
+		<h3>Voeg een onderdeel toe</h3>
+		{{ csrfInput() }}
+		{{ actionInput('entries/save-entry') }}
+		{{ hiddenInput('sectionId', '5') }}
+		{{ hiddenInput('enabled', '1') }}
+
+		<label for="title">Naam van onderdeel</label>
+		{{ input('text', 'title', "", {
+        id: 'title',
+      }) }}
+
+		{% if entry.parent() %}
+			{{ input('number', 'parentId', entry.parent.id, {
+          id: 'parentId',
+          class: 'hidden',
+        }) }}
+		{% else %}
+			{{ input('number', 'parentId', entry.id, {
+          id: 'parentId',
+          class: 'hidden',
+        }) }}
+		{% endif %}
+
+		<button class="btn" type="submit">Voeg toe</button>
+	</form>
+</div>
