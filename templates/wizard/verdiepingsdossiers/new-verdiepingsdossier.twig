@@ -7,6 +7,11 @@
 	<link rel="stylesheet" href="{{ alias('@web/css/pages/new.css') }}"/>
 {% endblock %}
 
+{% block scripts %}
+	{{ parent() }}
+	<script src="{{ alias('@web/js/image-preview.js') }}"></script>
+{% endblock %}
+
 {% block content %}
 
 	{% include "_includes/title" %}
@@ -46,6 +51,9 @@
 						id: 'image',
 					}) }}
 					{{ _self.errorList(entry.getErrors('image')) }}
+					<div class="image-preview">
+						<img id="chosen-image" src="" alt="">
+					</div>
 				</div>
 			</div>
 		</div>

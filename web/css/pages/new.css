@@ -55,3 +55,7 @@ span {
   font-size: 0.8rem;
   font-weight: normal;
 }
+form .form-image .image-preview img {
+  max-height: 10rem;
+  margin-top: 2rem
+}
