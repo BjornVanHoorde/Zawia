@@ -1,5 +1,5 @@
 <form class="new-form" method="post" accept-charset="UTF-8" enctype="multipart/form-data">
-  {% set section = entry.section %}
+	{% set section = entry.section %}
 	{{ csrfInput() }}
 	{{ actionInput('entries/save-entry') }}
 	{% if entry.level == 1 %}
@@ -65,7 +65,7 @@
 		{{ _self.errorList(entry.getErrors('body')) }}
 
 		{% if entry.level == 1 %}
-			<div class="field">
+			<div class="field checkboxes-field">
 				<label for="categoryThema">Thema's</label>
 				<div class="checkboxes flex">
 					{% set themes = craft.categories().group("themas").all() %}
@@ -95,6 +95,19 @@
 				</div>
 			</div>
 		{% endif %}
+
+		<div class="field sources-field">
+			<label for="sources">
+				Bronnen
+			</label>
+			{{ tag('textarea', {
+				id: 'sources',
+				name: 'fields[sources]',
+				text: entry.sources,
+				class: 'editor'
+			}) }}
+			{{ _self.errorList(entry.getErrors('sources')) }}
+		</div>
 
 		<div class="btn-div">
 			<button class="btn" type="submit">Opslaan</button>

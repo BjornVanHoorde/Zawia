@@ -1,4 +1,4 @@
-dateModified: 1673534556
+dateModified: 1673613985
 email:
   fromEmail: bjorvanh1@student.arteveldehs.be
   fromName: Zawia
@@ -41,6 +41,7 @@ meta:
     6edd9cc7-7f02-42eb-937e-8e242d90d712: Excerpt # Excerpt
     7dd22add-5475-42a6-93aa-1133b6797edc: Default # Default
     07f120b4-d3e2-4291-9995-a0524335a84e: 'Nieuw Artikel' # Nieuw Artikel
+    8a6be1cb-f4cd-4f89-9efd-71bf2055eb2f: Label # Label
     8a8ed8be-4d9f-46b0-97b7-9787f89f7c99: Menu # Menu
     8be4852e-195f-4377-b09a-8f1a336b5ea6: 'Mijn Artikels' # Mijn Artikels
     8de2ef2a-917d-4573-a731-2194990b8927: Common # Common
@@ -61,6 +62,7 @@ meta:
     4481ba63-3323-44b0-a5f9-783bd08e3174: 'Bewerk themadossier' # Bewerk themadossier
     9143d726-4edc-42e6-bd7e-963498cf1eac: 'Bewerk Verdiepingsdossier' # Bewerk Verdiepingsdossier
     11488e99-48cf-4b89-ae9e-74a299337c18: 'Category Thema' # Category Thema
+    49088cc0-ab2b-42ec-a2a5-5a4d9c056bea: Sources # Sources
     58855ae7-51e0-4f88-9827-a90a6b8a70e5: 'Menu Items' # Menu Items
     82064a65-72dc-4540-b424-e0692a2bbab1: Login # Login
     99601d0e-e7cd-4c78-91b1-c36db3eadd99: Toegang # Toegang
@@ -72,10 +74,12 @@ meta:
     abee3b12-8257-485d-8573-c0268d3fd8b4: 'Edu Escaperooms' # Edu Escaperooms
     b2874c9f-b905-4009-8994-9088b3ed9c1e: Zawia # Zawia
     b66552a3-1552-423b-b7fa-1db6b7a7876a: 'Nieuw Themadossier' # Nieuw Themadossier
+    b738006c-7294-41cc-a3fa-2284c9f69e15: Sources # Sources
     b5332235-c79e-406f-82c9-faa9fe658438: 'Bewerk Verdiepingsdossier' # Bewerk Verdiepingsdossier
     c5b2d6ec-5e5e-4fdf-8db7-b6c941319a67: Destination # Destination
     cd2017c1-ed0a-4f13-9c88-3d53c19c619a: 'Thema''s' # Thema's
     d0a7b5b2-2d89-4806-bd1d-6312e43b8f31: 'Soort Id' # Soort Id
+    d2a27266-6915-4072-90cb-3040cce7575c: Sourcelink # Sourcelink
     e022656e-6729-43b2-aa2f-31b66644c6e1: 'Nieuw Themadossier' # Nieuw Themadossier
     e4b10fcc-314a-4dbe-9c1e-71bbe01f9d07: Themadossiers # Themadossiers
     ec896c9b-91b7-46f8-a839-d56f4da0ae7f: Default # Default

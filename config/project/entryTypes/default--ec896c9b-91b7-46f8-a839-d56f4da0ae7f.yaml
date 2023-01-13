@@ -31,11 +31,21 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            elementCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\LevelConditionRule
+                  maxValue: ''
+                  operator: '='
+                  uid: f68818ea-ddd7-4505-9ea7-7f5c5fecbee5
+                  value: '1'
+              elementType: craft\elements\Entry
+              fieldContext: global
             fieldUid: ed35e35b-52d9-4544-8c98-a128bf571709 # Image
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 1d49e3ad-2365-42e8-bae4-5565d5d33306
@@ -43,11 +53,21 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            elementCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\LevelConditionRule
+                  maxValue: ''
+                  operator: '='
+                  uid: 73e39ef0-2f61-4059-85e2-fc3738c440b1
+                  value: '1'
+              elementType: craft\elements\Entry
+              fieldContext: global
             fieldUid: 6edd9cc7-7f02-42eb-937e-8e242d90d712 # Excerpt
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: d96bfc1e-759c-4c13-931f-324610f07e7b
@@ -78,6 +98,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 49088cc0-ab2b-42ec-a2a5-5a4d9c056bea # Sources
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4f2736c7-caff-49a4-9d99-f8ff56cc1a98
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: aef7296d-e714-492f-9edf-a0e9817ecba6
         userCondition: null
@@ -85,11 +117,21 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            elementCondition: null
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\elements\conditions\LevelConditionRule
+                  maxValue: ''
+                  operator: '='
+                  uid: 858ccd75-a92e-4e86-b4d6-b4d4db88ef3e
+                  value: '1'
+              elementType: craft\elements\Entry
+              fieldContext: global
             fieldUid: 11488e99-48cf-4b89-ae9e-74a299337c18 # Category Thema
             instructions: null
             label: null
-            required: false
+            required: true
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: dd239b9d-4abc-49c4-8e0d-8dcf34b32fb9

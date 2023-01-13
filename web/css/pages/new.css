@@ -27,6 +27,14 @@ form .field {
   margin-bottom: 2rem;
 }
 
+form .checkboxes-field {
+  margin-top: 2rem;
+}
+
+form .sources-field {
+  margin-top: 2rem;
+}
+
 form .btn-div {
   position: relative;
   margin: 2rem 0;

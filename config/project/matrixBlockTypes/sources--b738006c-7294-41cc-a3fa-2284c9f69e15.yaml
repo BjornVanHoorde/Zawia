@@ -1,0 +1,73 @@
+field: 49088cc0-ab2b-42ec-a2a5-5a4d9c056bea # Sources
+fieldLayouts:
+  4b7ee83d-4b6f-40f8-8200-a57d65dc93dd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 8a6be1cb-f4cd-4f89-9efd-71bf2055eb2f # Label
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6f3715df-2200-4697-ba6e-bbf3ec19dbeb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d2a27266-6915-4072-90cb-3040cce7575c # Sourcelink
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0ab397ca-ba8d-4dd1-9d42-f74dde474619
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 72f679f7-d412-4b65-a2d6-2384630d2a74
+        userCondition: null
+fields:
+  8a6be1cb-f4cd-4f89-9efd-71bf2055eb2f: # Label
+    columnSuffix: olirethg
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: null
+    name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d2a27266-6915-4072-90cb-3040cce7575c: # Sourcelink
+    columnSuffix: sbropxqr
+    contentColumnType: string(560)
+    fieldGroup: null
+    handle: sourcelink
+    instructions: null
+    name: Sourcelink
+    searchable: false
+    settings:
+      maxLength: 560
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: sources
+name: Sources
+sortOrder: 1

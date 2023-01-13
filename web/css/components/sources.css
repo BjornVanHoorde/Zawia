@@ -1,0 +1,9 @@
+.sources {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  background-color: var(--transparant);
+}
+
+.sources ul li {
+  list-style-type: decimal;
+}

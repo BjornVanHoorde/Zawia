@@ -18,8 +18,8 @@
 
   {% set verdiepingsdossiers = craft.entries().section("verdiepingsdossiers").level(1).authorId(currentUser.id).all() %}
   {% set themadossiers = craft.entries().section("themadossiers").level(1).authorId(currentUser.id).all() %}
-  {% set escaperooms = craft.entries().section("escaperooms").level(1).authorId(currentUser.id).all() %}
-  {% set onderzoeksvragen = craft.entries().section("onderzoeksvragen").level(1).authorId(currentUser.id).all() %}
+  {% set escaperooms = craft.entries().section("eduEscaperooms").authorId(currentUser.id).all() %}
+  {% set onderzoeksvragen = craft.entries().section("onderzoeksvragen").authorId(currentUser.id).all() %}
 
   <div class="container">
     <div class="buttons flex">

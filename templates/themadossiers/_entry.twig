@@ -17,7 +17,7 @@
 	{% include "_includes/title" %}
 
 	<div class="flex">
-		
+
 		{% include "_includes/aside" %}
 
 		<div class="text">
@@ -27,10 +27,11 @@
 			{% include "_includes/edit-btns" %}
 
 			{{ entry.body }}
+
+			{% include "_includes/sources" %}
+
 		</div>
 	</div>
 </div>
 
-{% include "_includes/add-topic" %}
-
-{% endblock %}
+{% include "_includes/add-topic" %}{% endblock %}

@@ -19,8 +19,8 @@
   {% set themaId = entry.categoryThemaSingle.one().id %}
   {% set verdiepingsdossiers = craft.entries().section("verdiepingsdossiers").level(1).relatedTo(themaId).all() %}
   {% set themadossiers = craft.entries().section("themadossiers").level(1).relatedTo(themaId).all() %}
-  {% set escaperooms = craft.entries().section("escaperooms").level(1).relatedTo(themaId).all() %}
-  {% set onderzoeksvragen = craft.entries().section("onderzoeksvragen").level(1).relatedTo(themaId).all() %}
+  {% set escaperooms = craft.entries().section("eduEscaperooms").relatedTo(themaId).all() %}
+  {% set onderzoeksvragen = craft.entries().section("onderzoeksvragen").relatedTo(themaId).all() %}
 
   <div class="container">
     <div class="buttons flex">
