@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 95a82697-8e2e-4437-ae45-7e4846584f6a # onderzoeksvragen
+handle: videos
+instructions: null
+name: 'Video''s'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_videos}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

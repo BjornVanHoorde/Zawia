@@ -1,0 +1,73 @@
+field: c9847ec4-05cf-49f9-ad55-b86d873568bf # Video's
+fieldLayouts:
+  ea79cc15-ff36-402c-8d01-f63e31ce8065:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 45697e71-2e31-4db2-8307-051d9fa71289 # Label
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2f8836c9-4e10-49ed-844a-8e8202de00ec
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 824101f7-3e24-4a4b-b364-a2f3a503a1d0 # Videolink
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 502e48c1-24e9-4806-937f-13521a7ef3ac
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 879bb805-d131-49c0-b4e9-1ce9543f5af4
+        userCondition: null
+fields:
+  45697e71-2e31-4db2-8307-051d9fa71289: # Label
+    columnSuffix: fpycgdtn
+    contentColumnType: text
+    fieldGroup: null
+    handle: label
+    instructions: null
+    name: Label
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  824101f7-3e24-4a4b-b364-a2f3a503a1d0: # Videolink
+    columnSuffix: bzmpxlck
+    contentColumnType: string(500)
+    fieldGroup: null
+    handle: videolink
+    instructions: null
+    name: Videolink
+    searchable: false
+    settings:
+      maxLength: 500
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: videos
+name: 'Video''s'
+sortOrder: 1

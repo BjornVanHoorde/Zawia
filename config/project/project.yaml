@@ -1,4 +1,4 @@
-dateModified: 1673613985
+dateModified: 1673615921
 email:
   fromEmail: bjorvanh1@student.arteveldehs.be
   fromName: Zawia
@@ -52,6 +52,7 @@ meta:
     060c715f-7f84-45ab-b444-a372660505fa: Toegang # Toegang
     79c6387a-1ff2-4303-b7d5-5911c124ed85: 'Nieuw verdiepingsdossier' # Nieuw verdiepingsdossier
     82c18cfa-2186-41cc-b3a7-d8d4f28bcd33: Images # Images
+    95a82697-8e2e-4437-ae45-7e4846584f6a: onderzoeksvragen # onderzoeksvragen
     199d7ef8-e908-47e0-ba2f-f4f75f2cb3b6: Default # Default
     299fffcc-2678-4d7b-a003-3c64178d734d: 'Thema''s' # Thema's
     391bf39d-15d7-4339-894c-d2e5678179fd: 'Category Soort' # Category Soort
@@ -61,22 +62,28 @@ meta:
     3871e358-1e8f-4ba2-a077-76520af3d9f7: 'Presentation Link' # Presentation Link
     4481ba63-3323-44b0-a5f9-783bd08e3174: 'Bewerk themadossier' # Bewerk themadossier
     9143d726-4edc-42e6-bd7e-963498cf1eac: 'Bewerk Verdiepingsdossier' # Bewerk Verdiepingsdossier
+    9351f7fa-9eb7-49ad-b883-aaf9bbd832cf: Onderzoeksvragen # Onderzoeksvragen
     11488e99-48cf-4b89-ae9e-74a299337c18: 'Category Thema' # Category Thema
+    45697e71-2e31-4db2-8307-051d9fa71289: Label # Label
     49088cc0-ab2b-42ec-a2a5-5a4d9c056bea: Sources # Sources
     58855ae7-51e0-4f88-9827-a90a6b8a70e5: 'Menu Items' # Menu Items
     82064a65-72dc-4540-b424-e0692a2bbab1: Login # Login
     99601d0e-e7cd-4c78-91b1-c36db3eadd99: Toegang # Toegang
     567278e8-d5ff-4fb3-8e1e-f4c7ed39dfc9: Verdiepingsdossiers # Verdiepingsdossiers
+    824101f7-3e24-4a4b-b364-a2f3a503a1d0: Videolink # Videolink
     30375302-41d5-48b8-9251-6f60f86596b9: Default # Default
     43850410-f9e9-4de1-aaad-423f84a0d5d8: 'Category Thema Single' # Category Thema Single
     a17e350d-daa8-4b8c-9140-a4668e8b40ef: Zawia # Zawia
+    a88f519d-7be7-4741-8118-bfea043f169b: Default # Default
     a781d844-0309-4579-81f5-a06f89fe8e0c: Login # Login
+    a415324e-656a-4ce8-ae82-fef14b8d74b0: 'Video''s' # Video's
     abee3b12-8257-485d-8573-c0268d3fd8b4: 'Edu Escaperooms' # Edu Escaperooms
     b2874c9f-b905-4009-8994-9088b3ed9c1e: Zawia # Zawia
     b66552a3-1552-423b-b7fa-1db6b7a7876a: 'Nieuw Themadossier' # Nieuw Themadossier
     b738006c-7294-41cc-a3fa-2284c9f69e15: Sources # Sources
     b5332235-c79e-406f-82c9-faa9fe658438: 'Bewerk Verdiepingsdossier' # Bewerk Verdiepingsdossier
     c5b2d6ec-5e5e-4fdf-8db7-b6c941319a67: Destination # Destination
+    c9847ec4-05cf-49f9-ad55-b86d873568bf: 'Video''s' # Video's
     cd2017c1-ed0a-4f13-9c88-3d53c19c619a: 'Thema''s' # Thema's
     d0a7b5b2-2d89-4806-bd1d-6312e43b8f31: 'Soort Id' # Soort Id
     d2a27266-6915-4072-90cb-3040cce7575c: Sourcelink # Sourcelink

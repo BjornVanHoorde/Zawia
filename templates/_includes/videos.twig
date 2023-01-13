@@ -1,0 +1,15 @@
+{% if entry.videos|length > 0 %}
+	<div class="videos-div">
+		<h3>Video's</h3>
+		<div class="videos">
+			{% for video in entry.videos %}
+				<a href="{{ video.videolink }}" class="video" target="_blank">
+					<div class="video-text">
+						<i class="fa-solid fa-play"></i>
+						{{ video.label }}
+					</div>
+				</a>
+			{% endfor %}
+		</div>
+	</div>
+{% endif %}

@@ -1,0 +1,24 @@
+defaultPlacement: end
+enableVersioning: true
+handle: onderzoeksvragen
+name: Onderzoeksvragen
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  b2874c9f-b905-4009-8994-9088b3ed9c1e: # Zawia
+    enabledByDefault: true
+    hasUrls: true
+    template: onderzoeksvragen/_entry
+    uriFormat: 'onderzoeksvragen/{slug}'
+type: channel

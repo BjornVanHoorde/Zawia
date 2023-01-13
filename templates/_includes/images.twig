@@ -1,0 +1,16 @@
+{% if entry.images|length > 0 %}
+	<div class="images-div">
+		<h3>Afbeeldingen</h3>
+		<div class="images">
+			{% for image in entry.images %}
+				<div class="image clickable">
+					<img class="clickable-image" src="{{ image.url }}" alt="{{ image.title }}"/>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+
+	<div class="bigger-image-div hidden" id="bigger-image-div">
+		<img id="bigger-image" src="" alt=""/>
+	</div>
+{% endif %}

@@ -1,0 +1,8 @@
+.content {
+  width: 60%;
+  margin: 3rem auto;
+}
+
+.content .text p {
+  margin-bottom: 1rem;
+}

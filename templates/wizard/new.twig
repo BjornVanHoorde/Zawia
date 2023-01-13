@@ -12,9 +12,8 @@
 	{% include "_includes/title" %}
 
 	<div class="buttons">
-	{% set artikelSoorten = craft.categories().group('artikelSoorten').all() %}
-	{% for artikelSoort in artikelSoorten %}
-		<a href="nieuw-{{ artikelSoort.slug }}" class="button">{{ artikelSoort.title }}</a>
-	{% endfor %}
+		<a href="nieuw-verdiepingsdossiers" class="button">verdiepingsdossiers</a>
+		<a href="nieuw-themadossiers" class="button">themadossiers</a>
+	</div>
 
 {% endblock %}

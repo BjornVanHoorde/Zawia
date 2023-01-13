@@ -1,0 +1,39 @@
+{% extends "_layout/site" %}
+
+{% requireLogin %}
+
+{% block head %}
+	{{ parent() }}
+	<link rel="stylesheet" href="{{ alias('@web/css/channels/onderzoeksvragen.css') }}"/>
+{% endblock %}
+
+{% block scripts %}
+	{{ parent() }}
+	<script src="{{ alias('@web/js/image.js') }}"></script>
+{% endblock %}
+
+{% block content %}
+
+	{% include "_includes/title" %}
+
+	<div class="container">
+
+		<div class="content">
+
+			{% include "_includes/category-tags" %}
+
+			<div class="text">
+				{{ entry.body }}
+			</div>
+
+			{% include "_includes/videos" %}
+
+			{% include "_includes/images" %}
+
+			{% include "_includes/sources" %}
+
+		</div>
+
+	</div>
+
+{% endblock %}
