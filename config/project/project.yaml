@@ -1,8 +1,8 @@
-dateModified: 1673615921
+dateModified: 1673770650
 email:
-  fromEmail: bjorvanh1@student.arteveldehs.be
+  fromEmail: vanhoordebjorn@gmail.com
   fromName: Zawia
-  replyToEmail: bjorvanh1@student.arteveldehs.be
+  replyToEmail: vanhoordebjorn@gmail.com
   template: ''
   transportSettings:
     encryptionMethod: none
@@ -84,6 +84,7 @@ meta:
     b5332235-c79e-406f-82c9-faa9fe658438: 'Bewerk Verdiepingsdossier' # Bewerk Verdiepingsdossier
     c5b2d6ec-5e5e-4fdf-8db7-b6c941319a67: Destination # Destination
     c9847ec4-05cf-49f9-ad55-b86d873568bf: 'Video''s' # Video's
+    cb16ee48-89d4-43e4-8ba3-5a4b86704a56: Readers
     cd2017c1-ed0a-4f13-9c88-3d53c19c619a: 'Thema''s' # Thema's
     d0a7b5b2-2d89-4806-bd1d-6312e43b8f31: 'Soort Id' # Soort Id
     d2a27266-6915-4072-90cb-3040cce7575c: Sourcelink # Sourcelink

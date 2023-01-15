@@ -2,6 +2,10 @@
 
 {% requireLogin %}
 
+{% if currentUser.getGroups[0].handle == "readers" %}
+	{% redirect "/" %}
+{% endif %}
+
 {% block head %}
 	{{ parent() }}
 	<link rel="stylesheet" href="{{ alias('@web/css/pages/new.css') }}"/>
@@ -15,10 +19,10 @@
 {% block content %}
 
 	{% include "_includes/title" %}
-<div class="container">
+	<div class="container">
 
-	{% include "_includes/wizard/dossiers/new-form" %}
+		{% include "_includes/wizard/dossiers/new-form" %}
 
-</div>
+	</div>
 
 {% endblock %}

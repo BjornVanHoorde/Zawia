@@ -2,6 +2,10 @@
 
 {% requireLogin %}
 
+{% if currentUser.getGroups[0].handle == "readers" %}
+	{% redirect "/" %}
+{% endif %}
+
 {% block head %}
 	{{ parent() }}
 	<link rel="stylesheet" href="{{ alias('@web/css/pages/themes.css') }}"/>
